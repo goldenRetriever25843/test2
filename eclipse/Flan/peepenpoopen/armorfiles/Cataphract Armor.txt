@@ -1,0 +1,16 @@
+Name Sassanian Cataphract Armor
+ShortName CataphractArmor
+ItemID 31257
+Icon Cataphract
+Colour 255 255 255
+Type Body
+Defence 0.3
+KnockbackModifier 0.5
+MoveSpeedModifier 0.95
+hunger true
+ArmourTexture SkinHeavyCataphract
+Model monolith.HeavyCataphract
+Description Tier -3.5_Persian Steel Scale and Mail_Sassanid Empire
+bodyArmor 22
+armArmor 21
+Durability 250

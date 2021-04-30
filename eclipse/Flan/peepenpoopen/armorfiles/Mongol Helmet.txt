@@ -1,0 +1,12 @@
+Name Mongol Lancer Helmet
+ShortName mongolHelmet
+ItemID 31257
+Icon MongolHelm
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+ArmourTexture SkinMongolHelm
+Model monolith.MongolHelm
+Description Tier -3_Mongol Lancer's Helmet
+headArmor 25
+Durability 100

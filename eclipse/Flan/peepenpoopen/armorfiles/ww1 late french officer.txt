@@ -1,0 +1,10 @@
+Name Prewar Officer Uniform
+ShortName ww1FrofficerLate
+ItemID 31257
+Icon GermanFeldgrauCoat
+Colour 255 255 255
+Type Body
+Defence 0.0
+ArmourTexture SkinFrenchOfficerWW1
+Model NewAge.WW1FrenchOfficerLate
+ModelScale 1.0

@@ -1,0 +1,91 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 7/21/20 11:52 AM
+Description: Ticking entity
+
+java.lang.ClassCastException: com.flansmod.common.driveables.DriveableData cannot be cast to net.minecraft.entity.player.InventoryPlayer
+	at com.flansmod.common.guns.ItemGun.reload(ItemGun.java:2382)
+	at com.flansmod.common.driveables.mechas.EntityMecha.useItem(EntityMecha.java:468)
+	at com.flansmod.common.driveables.mechas.EntityMecha.onUpdate(EntityMecha.java:1140)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2298)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:684)
+	at net.minecraft.world.World.updateEntity(World.java:2258)
+	at net.minecraft.world.World.updateEntities(World.java:2108)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:515)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:703)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.flansmod.common.guns.ItemGun.reload(ItemGun.java:2382)
+	at com.flansmod.common.driveables.mechas.EntityMecha.useItem(EntityMecha.java:468)
+	at com.flansmod.common.driveables.mechas.EntityMecha.onUpdate(EntityMecha.java:1140)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2298)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:684)
+	at net.minecraft.world.World.updateEntity(World.java:2258)
+
+-- Entity being ticked --
+Details:
+	Entity Type: Mecha (com.flansmod.common.driveables.mechas.EntityMecha)
+	Entity ID: 176
+	Entity Name: Elephant
+	Entity's Exact location: 608.53, 4.00, -257.59
+	Entity's Block location: World: (608,4,-258), Chunk: (at 0,0,14 in 38,-17; contains blocks 608,0,-272 to 623,255,-257), Region: (1,-1; contains chunks 32,-32 to 63,-1, blocks 512,0,-512 to 1023,255,-1)
+	Entity's Momentum: 0.00, 0.00, 0.00
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:2108)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:515)
+
+-- Affected level --
+Details:
+	Level name: New Worldo
+	All players: 1 total; [EntityPlayerMP['Player932'/174, l='New Worldo', x=608.59, y=5.31, z=-257.48]]
+	Chunk stats: ServerChunkCache: 791 Drop: 0
+	Level seed: -1899178136062863309
+	Level generator: ID 01 - flat, ver 0. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (297,4,326), Chunk: (at 9,0,6 in 18,20; contains blocks 288,0,320 to 303,255,335), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 674033 game time, 8000 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 75586 (now: false), thunder time: 29124 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:703)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Mac OS X (x86_64) version 10.15.5
+	Java Version: 1.8.0_181, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 646983840 bytes (617 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1558 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1558} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	PlayerAPI{1.4} [Player API] (minecraft.jar) 
+	UCHIJAAAA	flansmod{LabJac Mod Mark 25843 - April 2020} [Flan's Mod] (bin) 
+	UCHIJAAAA	SmartRender{2.1} [Smart Render] (SmartRender-dev-1.7.10-2.1.jar) 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 1 / 8; [EntityPlayerMP['Player932'/174, l='New Worldo', x=608.59, y=5.31, z=-257.48]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

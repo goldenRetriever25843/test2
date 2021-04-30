@@ -1,0 +1,16 @@
+Name Heavy Munitions Plate Armor
+ShortName heavyMunitions
+ItemID 31257
+Icon MunitionsArmor
+Colour 255 255 255
+Type Body
+Defence 0.4
+KnockbackModifier 0.5
+MoveSpeedModifier 0.88
+hunger true
+ArmourTexture SkinThreeFourthArmor
+Model monolith.ThreeFourthArmor
+Description Tier -2_Cheap Mass-Produced Heavy Armor_Renaissance
+bodyArmor 50
+armArmor 40
+Durability 225

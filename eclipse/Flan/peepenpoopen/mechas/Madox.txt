@@ -1,0 +1,71 @@
+//Naming
+Name Madox1
+ShortName Madox
+ItemID 7462
+//Visuals
+Icon Marauder
+Model monolith.PowerArmor
+Texture SkinMadox1TextureMap
+//Third Person Camera Distance
+CameraDistance 7.5
+//Driver and passenger positions
+Driver 0 22 0 -50 50 -85 45
+Passengers 0
+//Offset of driver from the point of rotation
+//Speed Modifier, 1 is player speed
+MoveSpeed 0.8
+//YOffset
+YOffset 0
+//Fuel Tank Size
+FuelTankSize 1000
+//Inventory Slots
+CargoSlots 12
+//How quickly the legs react to a change in direction
+RotateSpeed 5
+//Will it squash puny mobs?
+SquashMobs true
+//Step Height (Integer) and Jump Height (Float)
+StepHeight 1
+JumpHeight 5
+//Arm origins used to rotate arm models and calculate position of held item / tool (positions in model co-ordinates)
+LeftArmOrigin 0 34 -13
+RightArmOrigin 0 34 14
+//Arm lengths used to determine where the held items appear (Again in model co-ords)
+ArmLength 21
+LegLength 24
+//The scale multiplier for rendering the items and tools being held (1 will automatically scale with model)
+HeldItemScale 0.8
+//Recipe
+//Each section of the mecha may have many parts
+//The sections are core, leftArm, rightArm, hips, head
+AddRecipeParts core 8 Repair
+AddRecipeParts leftArm 2 Repair
+AddRecipeParts rightArm 2 Repair
+AddRecipeParts hips 3 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+SetupPart core 400 -30 0 -20 60 80 40
+SetupPart hips 200 -10 0 -14 20 54 28
+SetupPart rightArm 150 -7 69 -32 53 16 14
+SetupPart leftArm 150 -7 69 32 53 16 -14
+BulletDetection 7
+//Height and Width for world collision
+Height 10
+Width 5
+//Height of chassis above the ground
+ChassisHeight 12
+//The amount of damage the mecha should take from falling
+FallDamageMultiplier 1.0
+//Whether to actually take fall damage. Can be overriden by upgrades
+TakeFallDamage false
+//The size of explosion to create per distance fallen upon hitting the ground
+BlockDamageFromFalling 0.5
+//Whether to actually damage the ground. Can be overridden by upgrades
+DamageBlocksFromFalling false
+ModelScale 1
+LegSwingLimit 5
+LimitHeadTurn True 75
+
+
+Description Tier 3_Power Suit
+IsExplosionWhenDestroyed true

@@ -1,0 +1,11 @@
+Name Ming Helmet
+ShortName MingHelm
+ItemID 31257
+Icon HanHelmet
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+MoveSpeedModifier 0.99
+ArmourTexture minghelm
+Model monolith.MingHat
+Description Tier -2.5_Chinese General Helmet_Ming Dynasty

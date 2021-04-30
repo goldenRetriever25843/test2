@@ -1,0 +1,12 @@
+Name Anglo Ridge Helmet w Boar Crest
+ShortName angloHelm
+ItemID 31257
+Icon NasalHelm
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+ArmourTexture SkinPioneerHelm
+Model monolith.PioneerHelm
+Description Tier -3_Anglo Helmet_Dark Ages
+headArmor 25
+Durability 100

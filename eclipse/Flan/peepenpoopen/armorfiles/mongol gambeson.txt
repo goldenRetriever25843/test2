@@ -1,0 +1,12 @@
+Name Green Padded Armor
+ShortName mongolgambeson
+ItemID 31257
+Icon Gambeson
+Colour 255 255 255
+Type Body
+Defence 0.15
+ArmourTexture SkinGambesonMongol
+Model monolith.Gambeson
+Description Reserve_Basic Padded Armor_Linen Silk or Wool Light Armor
+bodyArmor 5
+Durability 150

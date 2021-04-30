@@ -1,0 +1,12 @@
+Name Jingasa
+ShortName JingasaTakeda
+ItemID 31257
+Icon jingasaRed
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+ArmourTexture SkinJingasaTakeda
+Model monolith.Jingasa
+Description Tier -2.5_Japanese Helmet_Sengoku Period
+headArmor 25
+Durability 75

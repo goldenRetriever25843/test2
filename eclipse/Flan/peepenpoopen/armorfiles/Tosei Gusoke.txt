@@ -1,0 +1,16 @@
+Name Tosei Gusoke Armor
+ShortName Tosei
+ItemID 31257
+Icon SamuraiOda
+Colour 255 255 255
+Type Body
+Defence 0.4
+KnockbackModifier 0.5
+MoveSpeedModifier 0.95
+hunger True
+ArmourTexture SkinTosei
+Model monolith.ToseiRee
+Description Tier -2.5_Japanese Lamellar and Plate Armor_Tested Against Firearms_Sengoku Period
+bodyArmor 70
+armArmor 30
+Durability 200

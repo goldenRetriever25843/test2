@@ -1,0 +1,12 @@
+Name HEgyptian headdress
+ShortName EgyptHat
+ItemID 31257
+Icon HanHat
+Colour 255 255 255
+Type Helmet
+Defence 0.0
+MoveSpeedModifier 1.02
+ArmourTexture SkinEgypt
+Model monolith.egyptheaddress
+Description Reserve_Egyptian Infantry Hat_Old Kingdom
+ModelScale 1.05

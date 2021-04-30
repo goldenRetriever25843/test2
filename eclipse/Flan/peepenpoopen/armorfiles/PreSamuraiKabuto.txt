@@ -1,0 +1,12 @@
+Name Heian Kabuto
+ShortName preSamuraiKabuto
+ItemID 31257
+Icon yoroiHelm
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+ArmourTexture SkinProtoKabuto
+Model monolith.ProtoKabuto
+Description Tier -3.5_Japanese Helmet_Kamakura Shogunate
+headArmor 25
+Durability 69

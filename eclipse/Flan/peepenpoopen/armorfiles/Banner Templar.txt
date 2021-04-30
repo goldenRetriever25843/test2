@@ -1,0 +1,9 @@
+Name Templar Banner
+ShortName Templar
+Icon TemplarIcon
+Colour 255 255 255
+Type Boots
+Defence 0
+Model NewAge.CrusadeBanner
+ArmourTexture BannerTemplar
+Description Reserve_Knights Templar Identification Banner

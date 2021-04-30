@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Banner French.txt&apos; to &apos;Banner French.txt&apos;&#x0A;- Original project: &apos;Minecraft&apos;&#x0A;- Destination element: &apos;Banner French.txt&apos;&#x0A;- Original element: &apos;Banner French.txt&apos;" description="Copy file" element1="eclipse/Flan/Pre Industrial Pack/armorFiles/Banner French.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1566254995495" target="/Minecraft/eclipse/Flan/Pre Industrial Pack/armorFiles/Banner French.txt" units="0" version="1.0"/>
+</session>

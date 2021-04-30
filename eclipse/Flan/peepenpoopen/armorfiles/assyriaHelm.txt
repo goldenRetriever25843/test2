@@ -1,0 +1,12 @@
+Name Assyrian Helmet
+ShortName assyriaHelm
+ItemID 31257
+Icon Coolus
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+ArmourTexture SkinAssyriaHelm
+Model monolith.AssyriaHelm
+Description Tier -4_Assyrian Iron Helmet_Chad Period
+headArmor 21
+Durability 35

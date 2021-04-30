@@ -1,0 +1,14 @@
+Name Burgonet
+ShortName burgonet
+ItemID 31257
+Icon Burgonet
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+ArmourTexture SkinBurgonet
+Model monolith.Burgonet
+
+Description Tier -2_European Infantry Helmet_Can be Upgraded_Renaissance
+
+headArmor 30
+Durability 100

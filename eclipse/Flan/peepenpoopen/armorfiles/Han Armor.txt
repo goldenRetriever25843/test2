@@ -1,0 +1,14 @@
+Name Han Light Lamellar Armor
+ShortName HanArmor
+ItemID 31257
+Icon HanLight
+Colour 255 255 255
+Type Body
+Defence 0.2
+KnockbackModifier 0.5
+MoveSpeedModifier 0.99
+ArmourTexture SkinHanLamelar
+Model monolith.HanArmor
+Description Tier -4_Chinese Lamellar Armor_Made of Iron_Han Dynasty
+bodyArmor 20
+Durability 100

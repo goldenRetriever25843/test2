@@ -1,0 +1,12 @@
+Name Phrygian Helmet
+ShortName Phrygian
+ItemID 31257
+Icon Phrygian
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+ArmourTexture SkinPhrygianHelmet
+Model monolith.Phrygian
+Description Tier -4_Greek/Macedonian Bronze Helmet_Hellenistic Period
+headArmor 20
+Durability 40

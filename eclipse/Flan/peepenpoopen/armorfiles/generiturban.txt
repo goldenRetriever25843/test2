@@ -1,0 +1,14 @@
+Name Arabe Helmet
+ShortName generiturban
+ItemID 31257
+Icon ArabeHat
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+Overlay ninja
+ArmourTexture SkinTurban
+Model monolith.GenericTurban
+Description Tier -3.5_Arab Helmet_Early Medieval Period
+
+headArmor 25
+Durability 75

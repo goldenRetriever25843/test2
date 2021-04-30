@@ -1,0 +1,10 @@
+Name Senegal Tunic
+ShortName senegal
+ItemID 31257
+Icon GermanFeldgrauCoat
+Colour 255 255 255
+Type Body
+Defence 0.0
+ArmourTexture SkinSenegal
+Model NewAge.WW1FRsenegal
+ModelScale 1.0

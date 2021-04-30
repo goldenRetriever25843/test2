@@ -1,0 +1,111 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 9/11/20 7:50 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at com.flansmod.client.model.RenderGun.getRecoilDistance(RenderGun.java:1398)
+	at com.flansmod.client.model.RenderGun.renderGun(RenderGun.java:526)
+	at com.flansmod.client.model.RenderGun.renderGun(RenderGun.java:475)
+	at com.flansmod.client.model.RenderGun.renderItem(RenderGun.java:82)
+	at net.minecraftforge.client.ForgeHooksClient.renderEquippedItem(ForgeHooksClient.java:232)
+	at net.minecraft.client.renderer.ItemRenderer.renderItem(ItemRenderer.java:86)
+	at net.minecraft.client.renderer.ItemRenderer.renderItemInFirstPerson(ItemRenderer.java:511)
+	at net.minecraft.client.renderer.EntityRenderer.renderHand(EntityRenderer.java:797)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1437)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1087)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.flansmod.client.model.RenderGun.getRecoilDistance(RenderGun.java:1398)
+	at com.flansmod.client.model.RenderGun.renderGun(RenderGun.java:526)
+	at com.flansmod.client.model.RenderGun.renderGun(RenderGun.java:475)
+	at com.flansmod.client.model.RenderGun.renderItem(RenderGun.java:82)
+	at net.minecraftforge.client.ForgeHooksClient.renderEquippedItem(ForgeHooksClient.java:232)
+	at net.minecraft.client.renderer.ItemRenderer.renderItem(ItemRenderer.java:86)
+	at net.minecraft.client.renderer.ItemRenderer.renderItemInFirstPerson(ItemRenderer.java:511)
+	at net.minecraft.client.renderer.EntityRenderer.renderHand(EntityRenderer.java:797)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1437)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player468'/240, l='MpServer', x=239.12, y=8.49, z=-434.62]]
+	Chunk stats: MultiplayerChunkCache: 300, 300
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-185,4,-665), Chunk: (at 7,0,7 in -12,-42; contains blocks -192,0,-672 to -177,255,-657), Region: (-1,-2; contains chunks -32,-64 to -1,-33, blocks -512,0,-1024 to -1,255,-513)
+	Level time: 380570 game time, 4000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 64 total; [EntityCamera['unknown'/513, l='MpServer', x=165.88, y=4.64, z=-431.81], EntityVehicle['Generic Bombard 2.0'/259, l='MpServer', x=201.33, y=4.63, z=-411.43], EntityVehicle['Generic Bombard 2.0'/265, l='MpServer', x=198.70, y=4.63, z=-400.60], EntityCamera['unknown'/522, l='MpServer', x=181.50, y=4.65, z=-345.50], EntitySeat['entity.Seat.name'/527, l='MpServer', x=204.22, y=4.81, z=-421.84], EntityWheel['entity.Wheel.name'/528, l='MpServer', x=205.63, y=4.00, z=-419.56], EntityWheel['entity.Wheel.name'/529, l='MpServer', x=205.90, y=4.00, z=-422.30], EntityWheel['entity.Wheel.name'/530, l='MpServer', x=202.54, y=4.00, z=-422.63], EntityWheel['entity.Wheel.name'/531, l='MpServer', x=202.27, y=4.00, z=-419.90], EntitySeat['entity.Seat.name'/532, l='MpServer', x=206.50, y=4.81, z=-431.70], EntityWheel['entity.Wheel.name'/533, l='MpServer', x=204.90, y=4.00, z=-429.56], EntityWheel['entity.Wheel.name'/534, l='MpServer', x=207.55, y=4.00, z=-430.30], EntityWheel['entity.Wheel.name'/535, l='MpServer', x=206.63, y=4.00, z=-433.55], EntityWheel['entity.Wheel.name'/536, l='MpServer', x=203.98, y=4.00, z=-432.80], EntityVehicle['Generic Bombard 2.0'/281, l='MpServer', x=184.50, y=4.63, z=-423.50], EntitySeat['entity.Seat.name'/537, l='MpServer', x=201.78, y=4.81, z=-412.05], EntityWheel['entity.Wheel.name'/538, l='MpServer', x=202.30, y=4.00, z=-409.43], EntityWheel['entity.Wheel.name'/539, l='MpServer', x=203.51, y=4.00, z=-411.90], EntityWheel['entity.Wheel.name'/540, l='MpServer', x=200.48, y=4.00, z=-413.38], EntityWheel['entity.Wheel.name'/541, l='MpServer', x=199.27, y=4.00, z=-410.91], EntitySeat['entity.Seat.name'/542, l='MpServer', x=198.43, y=4.81, z=-401.31], EntityVehicle['Generic Bombard 2.0'/287, l='MpServer', x=179.50, y=4.63, z=-424.50], EntityWheel['entity.Wheel.name'/543, l='MpServer', x=200.91, y=4.00, z=-400.31], EntityWheel['entity.Wheel.name'/544, l='MpServer', x=199.51, y=4.00, z=-402.68], EntityWheel['entity.Wheel.name'/545, l='MpServer', x=196.61, y=4.00, z=-400.96], EntityWheel['entity.Wheel.name'/546, l='MpServer', x=198.00, y=4.00, z=-398.59], EntitySeat['entity.Seat.name'/547, l='MpServer', x=185.19, y=4.81, z=-423.17], EntityWheel['entity.Wheel.name'/548, l='MpServer', x=182.70, y=4.00, z=-422.20], EntityVehicle['Generic Bombard 2.0'/293, l='MpServer', x=176.51, y=4.63, z=-422.46], EntityWheel['entity.Wheel.name'/549, l='MpServer', x=185.34, y=4.00, z=-421.44], EntityWheel['entity.Wheel.name'/550, l='MpServer', x=186.27, y=4.00, z=-424.68], EntityWheel['entity.Wheel.name'/551, l='MpServer', x=183.63, y=4.00, z=-425.44], EntitySeat['entity.Seat.name'/552, l='MpServer', x=180.23, y=4.81, z=-424.30], EntityWheel['entity.Wheel.name'/553, l='MpServer', x=177.96, y=4.00, z=-422.89], EntityWheel['entity.Wheel.name'/554, l='MpServer', x=180.70, y=4.00, z=-422.63], EntityWheel['entity.Wheel.name'/555, l='MpServer', x=181.03, y=4.00, z=-425.99], EntityWheel['entity.Wheel.name'/556, l='MpServer', x=178.29, y=4.00, z=-426.25], EntitySeat['entity.Seat.name'/557, l='MpServer', x=177.25, y=4.81, z=-422.31], EntityWheel['entity.Wheel.name'/558, l='MpServer', x=175.08, y=4.00, z=-420.76], EntityWheel['entity.Wheel.name'/559, l='MpServer', x=177.82, y=4.00, z=-420.66], EntityWheel['entity.Wheel.name'/560, l='MpServer', x=177.93, y=4.00, z=-424.04], EntityWheel['entity.Wheel.name'/561, l='MpServer', x=175.19, y=4.00, z=-424.13], EntitySeat['entity.Seat.name'/562, l='MpServer', x=164.45, y=6.88, z=-425.65], EntityWheel['entity.Wheel.name'/563, l='MpServer', x=163.85, y=4.00, z=-430.89], EntityWheel['entity.Wheel.name'/564, l='MpServer', x=166.29, y=4.00, z=-429.63], EntityVehicle['Krupp 355mm'/309, l='MpServer', x=165.88, y=4.63, z=-431.81], EntityWheel['entity.Wheel.name'/565, l='MpServer', x=167.85, y=4.00, z=-432.62], EntityWheel['entity.Wheel.name'/566, l='MpServer', x=165.40, y=4.00, z=-433.89], EntitySeat['entity.Seat.name'/567, l='MpServer', x=180.03, y=6.31, z=-347.03], EntityWheel['entity.Wheel.name'/568, l='MpServer', x=179.78, y=4.00, z=-346.91], EntityWheel['entity.Wheel.name'/569, l='MpServer', x=179.72, y=4.00, z=-344.17], EntityWheel['entity.Wheel.name'/570, l='MpServer', x=183.09, y=4.00, z=-344.09], EntityWheel['entity.Wheel.name'/571, l='MpServer', x=183.16, y=4.00, z=-346.84], EntityVehicle['Bertha'/322, l='MpServer', x=181.50, y=4.63, z=-345.50], EntityCamera['unknown'/473, l='MpServer', x=204.02, y=4.63, z=-421.11], EntityCamera['unknown'/475, l='MpServer', x=205.74, y=4.63, z=-431.61], EntityClientPlayerMP['Player468'/240, l='MpServer', x=239.12, y=8.49, z=-434.62], EntityCamera['unknown'/483, l='MpServer', x=201.33, y=4.64, z=-411.43], EntityCamera['unknown'/485, l='MpServer', x=198.70, y=4.64, z=-400.61], EntityVehicle['Generic Bombard 2.0'/241, l='MpServer', x=204.02, y=4.63, z=-421.10], EntityCamera['unknown'/497, l='MpServer', x=184.50, y=4.64, z=-423.50], EntityCamera['unknown'/499, l='MpServer', x=179.50, y=4.64, z=-424.50], EntityCamera['unknown'/501, l='MpServer', x=176.51, y=4.64, z=-422.46], EntityVehicle['Polybolos'/247, l='MpServer', x=205.75, y=4.63, z=-431.61]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:991)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Mac OS X (x86_64) version 10.15.6
+	Java Version: 1.8.0_181, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 650921096 bytes (620 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1558 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1558} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	PlayerAPI{1.4} [Player API] (minecraft.jar) 
+	UCHIJAAAA	flansmod{LabJac Mod Mark 25843 - April 2020} [Flan's Mod] (bin) 
+	UCHIJAAAA	SmartRender{2.1} [Smart Render] (SmartRender-dev-1.7.10-2.1.jar) 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '2.1 ATI-3.10.16' Renderer: 'AMD Radeon Pro 575 OpenGL Engine'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon Pro 575 OpenGL Engine GL version 2.1 ATI-3.10.16, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because ARB_framebuffer_object is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

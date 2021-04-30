@@ -1,0 +1,15 @@
+Name Lorica Hamata
+ShortName Hamata
+ItemID 31257
+Icon Hamata
+Colour 255 255 255
+Type Body
+Defence 0.25
+KnockbackModifier 0.5
+MoveSpeedModifier 0.95
+ArmourTexture SkinLoricaSquamata
+Model monolith.LoricaSquamata
+Description Tier -4_Roman Iron Mail_Republican Period
+bodyArmor 20
+armArmor 15
+Durability 150

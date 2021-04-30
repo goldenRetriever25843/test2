@@ -1,0 +1,16 @@
+Name Tang Heavy Lamellar Armor
+ShortName mingguang
+ItemID 31257
+Icon JurchenLancer
+Colour 255 255 255
+Type Body
+Defence 0.4
+KnockbackModifier 0.5
+MoveSpeedModifier 0.9
+hunger false
+ArmourTexture SkinMingguang
+Model monolith.Mingguang
+Description Tier -3_Chinese Heavy Lamellar Armor_Tang Dynasty
+bodyArmor 40
+armArmor 32
+Durability 150

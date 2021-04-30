@@ -1,0 +1,29 @@
+Name Lorica Segmentata Improved Armor
+ShortName loricaDacia
+ItemID 31257
+Icon RomeBody
+Colour 255 255 255
+Type Body
+Defence 1.0
+KnockbackModifier 0.5
+MoveSpeedModifier 0.9
+hunger False
+ArmourTexture SkinLoricaSegmentata
+Model monolith.LoricaDacia
+Description Tier 13.5_NeoRoman Heavy Plate Armor_Has Manica (armguard) and Greaves_Dacian Space War
+bodyArmor 25
+armArmor 22
+Durability 10
+energyShield true
+rechargeTimer 170
+ShieldHitSound ShieldHit
+RechargeSound Recharge
+ShieldKillSound ShieldKill
+WarningSound ShieldDown
+WarningSoundTimer 67
+rechargeDelay 5
+
+ReserveBodyArmor 5
+ReserveArmArmor 5
+ReserveLegArmor 5
+BackupDefence 0.1

@@ -1,0 +1,16 @@
+Name Bronze Scale Armor
+ShortName scale
+ItemID 31257
+Icon Cataphract
+Colour 255 255 255
+Type Body
+Defence 0.3
+KnockbackModifier 0.5
+MoveSpeedModifier 0.95
+hunger true
+ArmourTexture SkinGenericScale
+Model monolith.GenericScale
+Description Tier -3.5_Generic Scale Armor
+bodyArmor 22
+armArmor 21
+Durability 250

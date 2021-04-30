@@ -1,0 +1,14 @@
+Name Hauberk and Coif
+ShortName byrnie
+Icon Underarmor
+Colour 255 255 255
+Type Body
+Defence 0.25
+Model monolith.Byrnie
+ArmourTexture SkinByrnie
+MoveSpeedModifier 0.9
+KnockbackModifier 0.5
+Description Tier -3_European Steel Hauberk_High Medieval Period
+bodyArmor 25
+armArmor 22
+Durability 250

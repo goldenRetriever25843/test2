@@ -1,0 +1,12 @@
+Name Veiled Turban Helmet
+ShortName nupasgtCover
+ItemID 31257
+Icon turbanHelmet
+Colour 255 255 255
+Type Helmet
+Defence 0.25
+ArmourTexture SkinPASGTcovered
+Model monolith.PASGTcovered
+Description next gen pasgt model
+headArmor 30
+Durability 90

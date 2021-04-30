@@ -1,0 +1,15 @@
+Name niqab
+ShortName tibet
+ItemID 31257
+Icon Cataphract
+Colour 255 255 255
+Type Body
+Defence 0.3
+KnockbackModifier 0.5
+MoveSpeedModifier 0.95
+ArmourTexture None
+Model monolith.TibetTribesman
+Description Tier -3.5_Persian Steel Scale and Mail_Sassanid Empire
+bodyArmor 22
+armArmor 21
+Durability 250

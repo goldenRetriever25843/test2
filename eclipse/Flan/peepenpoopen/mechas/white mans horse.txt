@@ -1,0 +1,79 @@
+//Naming
+Name Elephant
+ShortName whiteHorse
+ItemID 12501
+//Visuals
+Icon Bagger
+Model monolith.RacistHorse
+Texture SkinRacistHorse
+//Third Person Camera Distance
+CameraDistance 5.0
+//Driver and passenger positions
+Driver -2 29 0
+Passengers 0
+//Speed Modifier, 1 is player speed
+MoveSpeed 1
+//YOffset
+YOffset 0
+//Fuel Tank Size
+FuelTankSize 10000
+//Inventory Slots
+CargoSlots 48
+//How quickly the legs react to a change in direction
+RotateSpeed 8
+//Will it squash puny mobs?
+SquashMobs true
+//Step Height (Integer) and Jump Height (Float)
+StepHeight 1
+JumpHeight 4
+//Arm origins used to rotate arm models and calculate position of held item / tool (positions in model co-ordinates)
+LeftArmOrigin -2 40 -5
+RightArmOrigin -2 40 5
+//Arm lengths used to determine where the held items appear (Again in model co-ords)
+ArmLength 8
+LegLength 20
+//The scale multiplier for rendering the items and tools being held (1 will automatically scale with model)
+HeldItemScale 1.2
+//Recipe
+//Each section of the mecha may have many parts
+//The sections are core, leftArm, rightArm, hips, head
+AddRecipeParts core 31 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+SetupPart core 900 -23 0 -23 46 50 46
+BulletDetection 150
+//Height and Width for world collision
+Height 10
+Width 18
+//Height of chassis above the ground
+ChassisHeight 10
+//The amount of damage the mecha should take from falling
+FallDamageMultiplier 1
+//Whether to actually take fall damage. Can be overriden by upgrades
+TakeFallDamage false
+//The size of explosion to create per distance fallen upon hitting the ground
+BlockDamageFromFalling 1.0
+//Whether to actually damage the ground. Can be overridden by upgrades
+DamageBlocksFromFalling true
+ModelScale 1
+LegSwingLimit 5
+Description Tier 0_Super Heavy Mammal
+IsExplosionWhenDestroyed true
+DriverAimSpeed 5.5 5 0
+CollisionDamageEnable true
+CollisionDamageThrottle 1
+CollisionDamageTimes 12
+
+canPanic true
+panicSound elephantRage
+runAmokSound elephantAttack
+morale 50
+panicTime 15 
+solid true
+MechStomp true
+HasFlare True
+HasSmoke True
+FlareSound elephantRage
+
+
+vanillaDamage true

@@ -1,0 +1,12 @@
+Name Sea People Helmet
+ShortName seaPeopleHelm
+ItemID 31257
+Icon Coolus
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+ArmourTexture SkinSeaRaiderHelm
+Model monolith.SeaRaiderHelm
+Description Tier -4_Celtic Bronze Helmet_Early Republican Period
+headArmor 21
+Durability 35

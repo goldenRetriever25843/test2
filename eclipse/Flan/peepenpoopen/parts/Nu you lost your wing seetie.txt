@@ -1,0 +1,10 @@
+Name You lost your wing sweetie
+ShortName lostWing
+Icon lostWing
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 7407
+//Categories are Cockpit, Wing, Engine, Propeller, Bay, Tail, Wheel, Chassis, Turret, Fuel, Misc
+Category Misc
+StackSize 64
+Description Sorry sweetie, if a plane loses a wing, it's basically finished.

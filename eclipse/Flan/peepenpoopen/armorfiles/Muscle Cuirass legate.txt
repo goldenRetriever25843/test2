@@ -1,0 +1,15 @@
+Name Muscle Cuirass Legate
+ShortName musclecuirassLegate
+ItemID 31257
+Icon MuscleCuirass
+Colour 255 255 255
+Type Body
+Defence 0.3
+KnockbackModifier 0.5
+MoveSpeedModifier 0.85
+hunger True
+ArmourTexture SkinMuscleGeneral
+Model monolith.MuscleCuirassGeneral
+Description Tier -5_Greek Bronze Cuirass_Archaic Period
+bodyArmor 30
+Durability 75

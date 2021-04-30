@@ -1,0 +1,14 @@
+Name Han Dynasty Hat
+ShortName rusww1hat
+ItemID 31257
+Icon HanHat
+Colour 255 255 255
+Type Helmet
+Defence 0.0
+MoveSpeedModifier 1.02
+ArmourTexture SkinRusWW1Hat
+Model monolith.RusWW1Hat
+Description Reserve_Chinese Infantry Hat_Han Dynasty
+
+hasGunPouch true
+pouchMultiplier 0.5

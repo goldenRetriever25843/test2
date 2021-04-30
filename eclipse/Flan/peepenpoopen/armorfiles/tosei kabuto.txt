@@ -1,0 +1,12 @@
+Name Oda Samurai Helmet
+ShortName nuSamuraiHelm
+ItemID 31257
+Icon toseiHelm
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+ArmourTexture SkinNuKabuto
+Model monolith.nuKabuto
+Description Tier -2.5_Japanese Helmet_Sengoku Period
+headArmor 30
+Durability 75

@@ -1,0 +1,13 @@
+Name Sipahi Helmet
+ShortName sipahiHelmOpen
+ItemID 31257
+Icon HussarHelm
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+ArmourTexture SkinSipahiHelm
+Model monolith.SipahiHelmetOpen
+Description Tier -2.5_Turkish Helmet_Has Retractable Face Guard_Ottoman Empire
+ShapelessRecipe sipahiHelm
+headArmor 20
+Durability 100

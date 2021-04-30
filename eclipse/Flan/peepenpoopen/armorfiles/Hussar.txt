@@ -1,0 +1,14 @@
+Name Winged Hussar Armor
+ShortName HussarArmor
+ItemID 31257
+Icon Hussar
+Colour 255 255 255
+Type Body
+Defence 0.35
+KnockbackModifier 0.5
+MoveSpeedModifier 0.95
+ArmourTexture SkinWingedHussar
+Model monolith.WingedHussar
+Description Tier -2_Polish/Lituanian Cavalry Armor_Late Renaissance
+bodyArmor 50
+Durability 200

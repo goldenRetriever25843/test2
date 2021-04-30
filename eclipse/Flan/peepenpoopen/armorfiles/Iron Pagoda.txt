@@ -1,0 +1,13 @@
+Name Iron Pagoda
+ShortName pagoda
+ItemID 31257
+Icon JurchenHelm
+Colour 255 255 255
+Type Helmet
+Defence 0.25
+Overlay ninja
+ArmourTexture SkinIronPagoda
+Model monolith.IronPagoda
+Description Tier -3_Chinese Heavy Lamellar Helmet_Jurchen Jin Dynasty
+headArmor 40
+Durability 70

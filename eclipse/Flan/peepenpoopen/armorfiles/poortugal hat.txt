@@ -1,0 +1,11 @@
+Name kings guard hat
+ShortName kingsguardhat
+ItemID 31257
+Icon Velite
+Colour 255 255 255
+Type Helmet
+Defence 0.0
+MoveSpeedModifier 1
+ArmourTexture SkinKingsGuardHat
+Model NewAge.kingsguardhelm
+Description sikh hat

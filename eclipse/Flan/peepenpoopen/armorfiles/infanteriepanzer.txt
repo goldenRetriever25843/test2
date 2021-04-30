@@ -1,0 +1,16 @@
+Name Munitions Plate Armor
+ShortName infanteriepanzer
+ItemID 31257
+Icon MunitionsCuirass
+Colour 255 255 255
+Type Body
+Defence 0.3
+KnockbackModifier 0.5
+MoveSpeedModifier 0.97
+ArmourTexture SkinInfanteriePanzer
+Model monolith.InfanteriePanzer
+Description Tier -2_Cheap Mass-Produced Cuirass_Renaissance
+ModelScale 1.05
+
+bodyArmor 50
+Durability 150

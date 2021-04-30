@@ -1,0 +1,16 @@
+Name Parthian Cataphract Armor
+ShortName ParthianCataphractArmor
+ItemID 31257
+Icon Cataphract
+Colour 255 255 255
+Type Body
+Defence 0.3
+KnockbackModifier 0.5
+MoveSpeedModifier 0.95
+hunger true
+ArmourTexture SkinParthianCataphract
+Model monolith.ParthianCataphract
+Description Tier -3.5_Persian iron plate and Mail_Parthian Empire
+bodyArmor 22
+armArmor 21
+Durability 250

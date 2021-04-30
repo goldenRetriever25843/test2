@@ -1,0 +1,12 @@
+Name Veiled Turban Helmet
+ShortName nuACHcover
+ItemID 31257
+Icon turbanHelmet
+Colour 255 255 255
+Type Helmet
+Defence 0.25
+ArmourTexture SkinACHcover
+Model monolith.ACHcover
+Description next gen advanced combat helmet model
+headArmor 30
+Durability 90

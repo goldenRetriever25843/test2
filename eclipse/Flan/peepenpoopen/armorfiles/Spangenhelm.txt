@@ -1,0 +1,13 @@
+Name Spangenhelm
+ShortName spangenhelm
+ItemID 31257
+Icon VeiledHelm
+Colour 255 255 255
+Type Helmet
+Defence 0.25
+//Overlay Cataphract
+ArmourTexture SkinPersianSpangenhelm
+Model monolith.PersianSpangenhelm
+Description Tier -3.5_Persian Heavy Infantry Helmet_Sassanid Empire
+headArmor 29
+Durability 75

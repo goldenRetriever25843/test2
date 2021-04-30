@@ -1,0 +1,11 @@
+Name Indochinese Hat WW1
+ShortName indochineseHat
+ItemID 31257
+Icon Velite
+Colour 255 255 255
+Type Helmet
+Defence 0.0
+MoveSpeedModifier 1
+ArmourTexture SkinIndofrench
+Model NewAge.IndochineseLeafHat
+Description sikh hat

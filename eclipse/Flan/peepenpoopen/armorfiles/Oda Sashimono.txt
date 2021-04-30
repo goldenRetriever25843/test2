@@ -1,0 +1,10 @@
+Name Oda Clan Sashimono
+ShortName sashimonoOda
+ItemID 31257
+Icon OdaSashimono
+Colour 255 255 255
+Type Boots
+Defence 0.0
+ArmourTexture SkinSashimonoOda
+Model monolith.Sashimono
+Description Reserve_Japanese Identification Banner_Oda Clan Markings

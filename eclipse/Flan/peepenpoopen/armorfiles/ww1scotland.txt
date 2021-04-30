@@ -1,0 +1,10 @@
+Name Scottish Uniform
+ShortName scottishUniform
+ItemID 31257
+Icon GermanFeldgrauCoat
+Colour 255 255 255
+Type Body
+Defence 0.0
+ArmourTexture ScottishUniform
+Model NewAge.WW1ScottishKilt
+ModelScale 1.0

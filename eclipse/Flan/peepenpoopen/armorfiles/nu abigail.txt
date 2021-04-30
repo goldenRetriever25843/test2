@@ -1,0 +1,10 @@
+Name Persian Thot
+ShortName abigail
+Icon Philip2icon
+Colour 255 255 255
+Type Body
+Defence 4
+Model monolith.Abigail
+ArmourTexture SkinAbigail
+Description OwW
+playermodel true

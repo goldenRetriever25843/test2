@@ -1,0 +1,109 @@
+---- Minecraft Crash Report ----
+// Ooh. Shiny.
+
+Time: 9/11/20 7:54 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at com.flansmod.client.model.RenderGun.renderGun(RenderGun.java:808)
+	at com.flansmod.client.model.RenderGun.renderGun(RenderGun.java:475)
+	at com.flansmod.client.model.RenderGun.renderItem(RenderGun.java:82)
+	at net.minecraftforge.client.ForgeHooksClient.renderEquippedItem(ForgeHooksClient.java:232)
+	at net.minecraft.client.renderer.ItemRenderer.renderItem(ItemRenderer.java:86)
+	at net.minecraft.client.renderer.ItemRenderer.renderItemInFirstPerson(ItemRenderer.java:511)
+	at net.minecraft.client.renderer.EntityRenderer.renderHand(EntityRenderer.java:797)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1437)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1087)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.flansmod.client.model.RenderGun.renderGun(RenderGun.java:808)
+	at com.flansmod.client.model.RenderGun.renderGun(RenderGun.java:475)
+	at com.flansmod.client.model.RenderGun.renderItem(RenderGun.java:82)
+	at net.minecraftforge.client.ForgeHooksClient.renderEquippedItem(ForgeHooksClient.java:232)
+	at net.minecraft.client.renderer.ItemRenderer.renderItem(ItemRenderer.java:86)
+	at net.minecraft.client.renderer.ItemRenderer.renderItemInFirstPerson(ItemRenderer.java:511)
+	at net.minecraft.client.renderer.EntityRenderer.renderHand(EntityRenderer.java:797)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1437)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player235'/240, l='MpServer', x=239.12, y=8.49, z=-434.62]]
+	Chunk stats: MultiplayerChunkCache: 25, 25
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-185,4,-665), Chunk: (at 7,0,7 in -12,-42; contains blocks -192,0,-672 to -177,255,-657), Region: (-1,-2; contains chunks -32,-64 to -1,-33, blocks -512,0,-1024 to -1,255,-513)
+	Level time: 380622 game time, 4000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 29 total; [EntityCamera['unknown'/385, l='MpServer', x=166.26, y=4.98, z=-432.09], EntityVehicle['Generic Bombard 2.0'/261, l='MpServer', x=201.34, y=4.63, z=-411.43], EntityCamera['unknown'/392, l='MpServer', x=181.50, y=5.03, z=-345.50], EntityVehicle['Generic Bombard 2.0'/267, l='MpServer', x=198.70, y=4.63, z=-400.60], EntityClientPlayerMP['Player235'/240, l='MpServer', x=239.12, y=8.49, z=-434.62], EntityVehicle['Generic Bombard 2.0'/281, l='MpServer', x=184.50, y=4.63, z=-423.50], EntityVehicle['Generic Bombard 2.0'/287, l='MpServer', x=179.50, y=4.63, z=-424.50], EntityVehicle['Generic Bombard 2.0'/293, l='MpServer', x=176.51, y=4.63, z=-422.46], EntityVehicle['Krupp 355mm'/312, l='MpServer', x=166.27, y=4.63, z=-432.08], EntitySeat['entity.Seat.name'/577, l='MpServer', x=206.91, y=4.81, z=-432.30], EntityWheel['entity.Wheel.name'/578, l='MpServer', x=205.31, y=4.00, z=-430.16], EntityWheel['entity.Wheel.name'/579, l='MpServer', x=207.96, y=4.00, z=-430.91], EntityWheel['entity.Wheel.name'/580, l='MpServer', x=207.04, y=4.00, z=-434.16], EntityWheel['entity.Wheel.name'/581, l='MpServer', x=204.39, y=4.00, z=-433.41], EntitySeat['entity.Seat.name'/582, l='MpServer', x=204.22, y=4.81, z=-421.84], EntityVehicle['Bertha'/327, l='MpServer', x=181.50, y=4.63, z=-345.50], EntityWheel['entity.Wheel.name'/583, l='MpServer', x=205.62, y=4.00, z=-419.57], EntityWheel['entity.Wheel.name'/584, l='MpServer', x=205.90, y=4.00, z=-422.30], EntityWheel['entity.Wheel.name'/585, l='MpServer', x=202.54, y=4.00, z=-422.64], EntityWheel['entity.Wheel.name'/586, l='MpServer', x=202.26, y=4.00, z=-419.90], EntityCamera['unknown'/341, l='MpServer', x=206.16, y=4.80, z=-432.22], EntityCamera['unknown'/346, l='MpServer', x=204.01, y=4.82, z=-421.12], EntityCamera['unknown'/355, l='MpServer', x=201.32, y=4.93, z=-411.44], EntityCamera['unknown'/357, l='MpServer', x=198.69, y=4.93, z=-400.62], EntityCamera['unknown'/366, l='MpServer', x=184.50, y=4.98, z=-423.52], EntityCamera['unknown'/368, l='MpServer', x=179.48, y=4.98, z=-424.50], EntityCamera['unknown'/370, l='MpServer', x=176.50, y=4.98, z=-422.47], EntityVehicle['Polybolos'/243, l='MpServer', x=206.16, y=4.63, z=-432.22], EntityVehicle['Generic Bombard 2.0'/249, l='MpServer', x=204.02, y=4.63, z=-421.11]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:991)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Mac OS X (x86_64) version 10.15.6
+	Java Version: 1.8.0_181, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 594502848 bytes (566 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1558 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1558} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	PlayerAPI{1.4} [Player API] (minecraft.jar) 
+	UCHIJAAAA	flansmod{LabJac Mod Mark 25843 - April 2020} [Flan's Mod] (bin) 
+	UCHIJAAAA	SmartRender{2.1} [Smart Render] (SmartRender-dev-1.7.10-2.1.jar) 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '2.1 ATI-3.10.16' Renderer: 'AMD Radeon Pro 575 OpenGL Engine'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon Pro 575 OpenGL Engine GL version 2.1 ATI-3.10.16, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because ARB_framebuffer_object is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

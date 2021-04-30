@@ -1,0 +1,9 @@
+Name Jewish clothes
+ShortName jew
+Icon Philip2icon
+Colour 255 255 255
+Type Body
+Defence 4
+Model monolith.jewclothing
+ArmourTexture SkinJewClothing
+Description OwW

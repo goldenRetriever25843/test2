@@ -1,0 +1,17 @@
+Name Cerberus Armor
+ShortName cerberus
+Icon CerberusArmor
+Colour 255 255 255
+Type Helmet
+Defence 0.4
+Model monolith.Cerberus
+ArmourTexture Cerberus
+MoveSpeedModifier 0.95
+KnockbackModifier 1
+NightVision True
+//Overlay cerberusVision
+SmokeProtection True
+headArmor 45
+bodyArmor 50
+armArmor 40
+Durability 300

@@ -1,0 +1,107 @@
+showCrosshair true
+Name AKM experiment
+ShortName panjegan
+//The ammo this gun uses (shortName)
+Ammo anime
+Ammo klishnikov
+Ammo klishnikovDebug
+Ammo klishnikov40dmg
+Ammo HeshTest
+Ammo Ghost
+Ammo navalMine
+Ammo depthCharge
+Icon Gladius
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 23821
+//Reload time in ticks, 1/20ths of a second
+ReloadTime 2000
+//The amount of gun recoil, all relative : Sten = 1, Mp40 = 3, Kar98kSniper = 20
+Recoil 1
+Recoil 0.50
+RandomRecoilRange 1.00
+RandomRecoilYawRange 0.75
+DecreaseRecoil 0.50
+DecreaseRecoilYaw 1.25
+//Damage in half hearts
+Damage 1
+//The higher this value, the more the bullets spread
+Accuracy 5
+//Time in ticks between rounds
+ShootDelay 20
+Mode FullAuto
+//Bullet speed, default 3.0
+BulletSpeed 1.0
+//Default scope settings. Usually for aiming down sights. In which case, use FOVZoomLevel, not ZoomLevel
+Scope None
+ZoomLevel 1.0
+FOVZoomLevel 1.25
+//Deployable Settings
+Deployable False
+DeployedModel None
+//Model settings
+Model monolith.Panjegan
+ModelScale 0.8
+Texture SkinPanjegan
+//Attachment Settings
+AllowAllAttachments false
+//List here all the attachments allowed on this gun by shortName and separated by spaces
+AllowAttachments flanMWSilencer flanMWRedDot flanMWACOG flanMW4xScope flanMWSingleFire flanMWBurstFire flanMWAutoFire
+AllowBarrelAttachments true
+AllowScopeAttachments true
+AllowStockAttachments false
+AllowGripAttachments false
+NumGenericAttachmentSlots 1
+MoveSpeedModifier 0.99
+
+Description Tier 3_German Sub Machine Gun
+
+ShowRecoil true
+ShowAccuracy true
+ShowReloadTime true
+
+ReloadSoundRange 5
+GunSoundRange 300
+OneHanded True
+
+MeleeDamage 3
+//The time it takes to perform a melee attack in ticks
+MeleeTime 1
+//The point on the gun that does the damage
+
+
+
+
+MeleeHitSound sword_hit_weak
+ShieldHitSound shield_metal
+Description Tier -4.5_Roman Short Sword_Base Damage 5_Armor Piercing 18_Reach 1.2_One-Handed_Can Thrust_W for Overhead_A and D for Slashes_Republican Period
+OneHanded True
+ReloadTime 40
+//The amount of gun recoil, all relative : Sten = 1, Mp40 = 3, Kar98kSniper = 20
+Recoil 1.5
+RandomRecoilRange 2.00
+RandomRecoilYawRange 0.75
+DecreaseRecoil 1.50
+DecreaseRecoilYaw 1.25
+Accuracy 1
+ShootDelay 10
+BulletSpeed 0.5
+shootMelee false
+Mode FullAuto
+MeleeDamage 0.1
+NumBullets 1
+Damage 1
+ShowRecoil false
+ShowAccuracy false
+ShowReloadTime false
+ShootSound NataSwing
+// true if you still want the bow holding animation
+spear false
+UseCustomMelee False
+
+//Bullet Casing
+
+
+//Muzzle Flashes
+FlashModel NewAge.akflash
+FlashTexture None

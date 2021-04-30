@@ -1,0 +1,73 @@
+//Naming
+Name Maid Mech
+ShortName MechMaid
+ItemID 7462
+//Visuals
+Icon Maidicon
+Model monolith.MaidMech
+Texture SkinMaidDress
+//Third Person Camera Distance
+CameraDistance 12.0
+//Driver and passenger positions
+Driver 0 96 0
+Passengers 0
+//Offset of driver from the point of rotation
+RotatedDriverOffset 2 0 0
+//Speed Modifier, 1 is player speed
+MoveSpeed 0.5
+//YOffset
+YOffset 0
+//Fuel Tank Size
+FuelTankSize 10000
+//Inventory Slots
+CargoSlots 24
+//How quickly the legs react to a change in direction
+RotateSpeed 10
+//Will it squash puny mobs?
+SquashMobs true
+//Step Height (Integer) and Jump Height (Float)
+StepHeight 2
+JumpHeight 5
+//Arm origins used to rotate arm models and calculate position of held item / tool (positions in model co-ordinates)
+LeftArmOrigin 1 90 -24
+RightArmOrigin 1 90 24
+//Arm lengths used to determine where the held items appear (Again in model co-ords)
+ArmLength 38
+LegLength 15
+//The scale multiplier for rendering the items and tools being held (1 will automatically scale with model)
+HeldItemScale 0.8
+//Recipe
+//Each section of the mecha may have many parts
+//The sections are core, leftArm, rightArm, hips, head
+AddRecipeParts core 12 Repair
+AddRecipeParts leftArm 1 Repair
+AddRecipeParts rightArm 1 Repair
+AddRecipeParts hips 2 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+SetupPart core 700 -22 33 -13 44 89 26
+SetupPart hips 500 -11 0 -24 22 62 48
+SetupPart rightArm 150 -7 69 -32 53 16 14
+SetupPart leftArm 150 -7 69 32 53 16 -14
+BulletDetection 6
+//Height and Width for world collision
+Height 125
+Width 50
+//Height of chassis above the ground
+ChassisHeight 120
+//The amount of damage the mecha should take from falling
+FallDamageMultiplier 1.0
+//Whether to actually take fall damage. Can be overriden by upgrades
+TakeFallDamage false
+//The size of explosion to create per distance fallen upon hitting the ground
+BlockDamageFromFalling 10.0
+//Whether to actually damage the ground. Can be overridden by upgrades
+DamageBlocksFromFalling false
+ModelScale 3.85
+LegSwingLimit 3
+LimitHeadTurn True 30
+UpperArmLimit 50
+LowerArmLimit 90
+
+Description Tier 2_Domestic Worker
+IsExplosionWhenDestroyed true

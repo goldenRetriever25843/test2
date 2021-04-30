@@ -1,0 +1,13 @@
+Name Sassanid veiled Helmet
+ShortName VeiledHelm
+ItemID 31257
+Icon VeiledHelm
+Colour 255 255 255
+Type Helmet
+Defence 0.25
+Overlay Cataphract
+ArmourTexture SkinPersianVeiledHelm
+Model monolith.PersianVeiledHelm
+Description Tier -3.5_Persian Veiled Helmet_Sassanid Empire
+headArmor 29
+Durability 75

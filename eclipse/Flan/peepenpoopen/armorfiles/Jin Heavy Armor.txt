@@ -1,0 +1,16 @@
+Name Jin Heavy Lamellar Armor
+ShortName JinLamellar
+ItemID 31257
+Icon JurchenLancer
+Colour 255 255 255
+Type Body
+Defence 0.4
+KnockbackModifier 0.5
+MoveSpeedModifier 0.9
+hunger true
+ArmourTexture SkinJinHeavyArmor
+Model monolith.JinheavyArmor
+Description Tier -3_Chinese Heavy Lamellar Armor_Jurchen Jin Dynasty
+bodyArmor 40
+armArmor 32
+Durability 150

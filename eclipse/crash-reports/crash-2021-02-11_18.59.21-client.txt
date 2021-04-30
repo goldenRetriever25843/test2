@@ -1,0 +1,124 @@
+---- Minecraft Crash Report ----
+// Would you like a cupcake?
+
+Time: 2/11/21 6:59 PM
+Description: Rendering entity in world
+
+java.lang.NullPointerException: Rendering entity in world
+	at com.flansmod.client.model.RenderPlane.render(RenderPlane.java:197)
+	at com.flansmod.client.model.RenderPlane.doRender(RenderPlane.java:370)
+	at net.minecraft.client.renderer.entity.RenderManager.func_147939_a(RenderManager.java:300)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:278)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:251)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:527)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1300)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1087)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.flansmod.client.model.RenderPlane.render(RenderPlane.java:197)
+	at com.flansmod.client.model.RenderPlane.doRender(RenderPlane.java:370)
+
+-- Entity being rendered --
+Details:
+	Entity Type: Plane (com.flansmod.common.driveables.EntityPlane)
+	Entity ID: 168
+	Entity Name: Yak-38 Afterburn
+	Entity's Exact location: 9545.22, -2.95, 3593.47
+	Entity's Block location: World: (9545,-3,3593), Chunk: (at 9,-1,9 in 596,224; contains blocks 9536,0,3584 to 9551,255,3599), Region: (18,7; contains chunks 576,224 to 607,255, blocks 9216,0,3584 to 9727,255,4095)
+	Entity's Momentum: 0.00, -1.65, 0.00
+
+-- Renderer details --
+Details:
+	Assigned renderer: com.flansmod.client.model.RenderPlane@2b48b98f
+	Location: 20.68,-8.85,72.34 - World: (20,-9,72), Chunk: (at 4,-1,8 in 1,4; contains blocks 16,0,64 to 31,255,79), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Rotation: 159.5463
+	Delta: 0.3991065
+Stacktrace:
+	at net.minecraft.client.renderer.entity.RenderManager.func_147939_a(RenderManager.java:300)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:278)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:251)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:527)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1300)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player349'/91, l='MpServer', x=9524.53, y=5.62, z=3521.13]]
+	Chunk stats: MultiplayerChunkCache: 30, 30
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-921,4,192), Chunk: (at 7,0,0 in -58,12; contains blocks -928,0,192 to -913,255,207), Region: (-2,0; contains chunks -64,0 to -33,31, blocks -1024,0,0 to -513,255,511)
+	Level time: 367432 game time, 14000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 73 total; [EntitySpider['Spider'/128, l='MpServer', x=9530.19, y=3.00, z=3580.50], EntitySkeleton['Skeleton'/129, l='MpServer', x=9525.50, y=3.00, z=3582.50], EntityCamera['unknown'/130, l='MpServer', x=9522.90, y=4.89, z=3519.64], EntityCamera['unknown'/522, l='MpServer', x=9550.13, y=2.26, z=3601.18], EntityZombie['Zombie'/140, l='MpServer', x=9480.28, y=2.96, z=3549.13], EntityZombie['Zombie'/141, l='MpServer', x=9487.50, y=2.96, z=3540.50], EntityZombie['Zombie'/142, l='MpServer', x=9505.03, y=2.96, z=3477.38], EntityEnderman['Enderman'/143, l='MpServer', x=9513.66, y=2.96, z=3484.66], EntityZombie['Zombie'/144, l='MpServer', x=9519.06, y=2.96, z=3483.50], EntityZombie['Zombie'/145, l='MpServer', x=9515.50, y=2.96, z=3485.50], EntityZombie['Zombie'/146, l='MpServer', x=9519.31, y=2.96, z=3475.84], EntitySpider['Spider'/147, l='MpServer', x=9582.81, y=2.96, z=3514.56], EntityCreeper['Creeper'/148, l='MpServer', x=9572.50, y=2.96, z=3537.50], EntityVehicle['M46 Patton'/149, l='MpServer', x=9538.44, y=4.94, z=3577.89], EntityWheel['entity.Wheel.name'/152, l='MpServer', x=9535.16, y=4.00, z=3576.39], EntityWheel['entity.Wheel.name'/153, l='MpServer', x=9535.79, y=4.00, z=3580.34], EntityCreeper['Creeper'/158, l='MpServer', x=9479.50, y=2.96, z=3564.50], EntityCreeper['Creeper'/159, l='MpServer', x=9456.50, y=2.96, z=3528.50], EntityCreeper['Creeper'/160, l='MpServer', x=9587.50, y=2.96, z=3521.06], EntitySlime['Slime'/161, l='MpServer', x=9531.63, y=2.96, z=3595.38], EntitySkeleton['Skeleton'/162, l='MpServer', x=9518.72, y=2.96, z=3591.16], EntityZombie['Zombie'/163, l='MpServer', x=9457.50, y=2.96, z=3519.50], EntitySlime['Slime'/164, l='MpServer', x=9536.69, y=2.96, z=3458.44], EntitySpider['Spider'/165, l='MpServer', x=9550.06, y=2.96, z=3459.09], EntityZombie['Zombie'/166, l='MpServer', x=9593.50, y=2.96, z=3547.50], EntitySpider['Spider'/167, l='MpServer', x=9586.97, y=2.96, z=3539.16], EntityPlane['Yak-38 Afterburn'/168, l='MpServer', x=9545.22, y=-2.95, z=3593.47], EntityVehicle['M46 Patton'/173, l='MpServer', x=9543.50, y=5.13, z=3590.50], EntitySpider['Spider'/187, l='MpServer', x=9473.25, y=3.57, z=3571.22], EntityCreeper['Creeper'/188, l='MpServer', x=9482.50, y=2.96, z=3573.50], EntitySeat['entity.Seat.name'/444, l='MpServer', x=9523.20, y=5.19, z=3517.72], EntitySeat['entity.Seat.name'/445, l='MpServer', x=9521.86, y=6.94, z=3520.59], EntityZombie['Zombie'/190, l='MpServer', x=9459.50, y=2.96, z=3576.50], EntityWheel['entity.Wheel.name'/446, l='MpServer', x=9519.21, y=4.00, z=3520.49], EntityWheel['entity.Wheel.name'/447, l='MpServer', x=9522.81, y=4.00, z=3516.67], EntityZombie['Zombie'/192, l='MpServer', x=9453.50, y=2.96, z=3533.50], EntityZombie['Zombie'/193, l='MpServer', x=9454.50, y=2.96, z=3521.50], EntitySkeleton['Skeleton'/194, l='MpServer', x=9524.66, y=2.96, z=3443.34], EntityCreeper['Creeper'/196, l='MpServer', x=9522.70, y=3.58, z=3445.47], EntityCreeper['Creeper'/197, l='MpServer', x=9524.37, y=2.98, z=3444.96], EntityZombie['Zombie'/199, l='MpServer', x=9597.50, y=2.96, z=3569.50], EntityZombie['Zombie'/200, l='MpServer', x=9591.88, y=2.96, z=3578.75], EntityZombie['Zombie'/201, l='MpServer', x=9576.50, y=2.96, z=3599.50], EntitySkeleton['Skeleton'/203, l='MpServer', x=9522.72, y=2.96, z=3600.75], EntityPlane['Yak-38 Afterburn'/204, l='MpServer', x=9550.13, y=-2.95, z=3601.20], EntityZombie['Zombie'/210, l='MpServer', x=9553.50, y=2.96, z=3454.50], EntitySlime['Slime'/212, l='MpServer', x=9470.86, y=4.60, z=3468.34], EntityWitch['Witch'/213, l='MpServer', x=9604.50, y=2.96, z=3580.50], EntitySpider['Spider'/214, l='MpServer', x=9602.72, y=2.96, z=3580.94], EntitySpider['Spider'/92, l='MpServer', x=9526.53, y=4.00, z=3525.91], EntityCreeper['Creeper'/94, l='MpServer', x=9513.50, y=4.00, z=3524.50], EntityClientPlayerMP['Player349'/91, l='MpServer', x=9524.53, y=5.62, z=3521.13], EntitySpider['Spider'/98, l='MpServer', x=9521.50, y=4.00, z=3517.66], EntityVehicle['Altay-AHT'/100, l='MpServer', x=9522.72, y=4.75, z=3519.68], EntityCamera['unknown'/484, l='MpServer', x=9538.44, y=5.28, z=3578.00], EntityZombie['Zombie'/231, l='MpServer', x=9449.50, y=2.96, z=3451.50], EntityWheel['entity.Wheel.name'/104, l='MpServer', x=9522.12, y=4.00, z=3523.23], EntityWheel['entity.Wheel.name'/105, l='MpServer', x=9525.72, y=4.00, z=3519.42], EntityCreeper['Creeper'/107, l='MpServer', x=9489.50, y=3.00, z=3532.50], EntityCreeper['Creeper'/108, l='MpServer', x=9491.50, y=3.00, z=3535.50], EntityCreeper['Creeper'/109, l='MpServer', x=9533.50, y=3.00, z=3497.50], EntitySkeleton['Skeleton'/110, l='MpServer', x=9556.50, y=3.00, z=3527.50], EntitySkeleton['Skeleton'/111, l='MpServer', x=9554.50, y=3.00, z=3527.50], EntitySpider['Spider'/112, l='MpServer', x=9520.38, y=3.00, z=3566.81], EntitySkeleton['Skeleton'/113, l='MpServer', x=9522.65, y=3.00, z=3553.76], EntityCamera['unknown'/498, l='MpServer', x=9545.22, y=2.26, z=3593.46], EntityEnderman['Enderman'/115, l='MpServer', x=9512.44, y=3.00, z=3489.50], EntityCreeper['Creeper'/116, l='MpServer', x=9538.50, y=3.00, z=3496.50], EntityCamera['unknown'/500, l='MpServer', x=9543.50, y=5.28, z=3590.50], EntityCreeper['Creeper'/120, l='MpServer', x=9484.50, y=3.00, z=3535.50], EntityCreeper['Creeper'/123, l='MpServer', x=9487.50, y=3.00, z=3534.50], EntityEnderman['Enderman'/126, l='MpServer', x=9530.50, y=3.00, z=3582.67], EntityEnderman['Enderman'/127, l='MpServer', x=9528.41, y=3.00, z=3577.41]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:984)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Mac OS X (x86_64) version 10.15.7
+	Java Version: 1.8.0_181, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 606160016 bytes (578 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1558 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1558} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	PlayerAPI{1.4} [Player API] (minecraft.jar) 
+	UCHIJAAAA	flansmod{LabJac Mod Mark 25843 - April 2020} [Flan's Mod] (bin) 
+	UCHIJAAAA	SmartRender{2.1} [Smart Render] (SmartRender-dev-1.7.10-2.1.jar) 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '2.1 ATI-3.10.18' Renderer: 'AMD Radeon Pro 575 OpenGL Engine'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon Pro 575 OpenGL Engine GL version 2.1 ATI-3.10.18, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because ARB_framebuffer_object is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

@@ -1,0 +1,9 @@
+Name Centurion Armor
+ShortName centurionskeleton
+Icon Philip2icon
+Colour 255 255 255
+Type Body
+Defence 4
+Model monolith.CenturionRussia
+ArmourTexture SkinCenturionRussia
+Description Next gen armor

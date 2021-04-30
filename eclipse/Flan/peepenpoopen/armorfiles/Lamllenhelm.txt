@@ -1,0 +1,13 @@
+Name Lamellenhelm
+ShortName lamellenhelm
+ItemID 31257
+Icon HanHelmet
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+MoveSpeedModifier 0.99
+ArmourTexture SkinLamellenhelm
+Model monolith.Lamellenhelm
+Description Tier -3.5_Avar Lameller Helmet_Wtf for some reason Germanic Lombards used it too
+headArmor 22
+Durability 50

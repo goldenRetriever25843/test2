@@ -1,0 +1,9 @@
+Name Santiago Banner
+ShortName Santiago
+Icon santiagoicon
+Colour 255 255 255
+Type Boots
+Defence 0
+Model NewAge.CrusadeBanner
+ArmourTexture BannerSantiago
+Description Reserve_Santiago Identification Banner

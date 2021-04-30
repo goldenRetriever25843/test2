@@ -1,0 +1,14 @@
+Name Song Lamellar Armor
+ShortName SongLamellar
+ItemID 31257
+Icon SongInfantry
+Colour 255 255 255
+Type Body
+Defence 0.25
+KnockbackModifier 0.5
+MoveSpeedModifier 0.95
+ArmourTexture SkinSongArmor
+Model monolith.SongArmor
+Description Tier -3_Chinese Lamellar Armor_Song Dynasty
+bodyArmor 25
+Durability 125

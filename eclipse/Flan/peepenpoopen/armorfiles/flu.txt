@@ -1,0 +1,12 @@
+Name Imperial Armor
+ShortName nothingburger
+ItemID 31257
+Icon HanLight
+Colour 255 255 255
+Type Body
+Defence 0.2
+KnockbackModifier 0.5
+MoveSpeedModifier 0.99
+ArmourTexture SkinNothingBurger
+Model monolith.nothingBurger
+Description Tier -4_Aztec Armor

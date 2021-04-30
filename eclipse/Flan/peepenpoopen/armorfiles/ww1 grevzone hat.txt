@@ -1,0 +1,11 @@
+Name revzone hat
+ShortName revzonehat
+ItemID 31257
+Icon Velite
+Colour 255 255 255
+Type Helmet
+Defence 0.0
+MoveSpeedModifier 1
+ArmourTexture SkinGRevezoneHat
+Model NewAge.GRevzonehat
+Description sikh hat

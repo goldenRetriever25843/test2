@@ -1,0 +1,16 @@
+Name Bascinet (closed)
+ShortName persianmaskedhelmet
+ItemID 31257
+Icon Bascinet
+Colour 255 255 255
+Type Helmet
+Defence 0.25
+ArmourTexture SkinPersianVeiledSuperHelm
+Model monolith.PersianVeiledSuperHelm
+
+
+Description Tier -3_European Helmet_Late Medieval Period_Has Visor_(Closed)
+ShapelessRecipe bascinetOpen
+MoveSpeedModifier 0.95
+headArmor 40
+Durability 100

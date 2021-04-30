@@ -1,0 +1,11 @@
+Name Cuirassier Helm
+ShortName cuirassierHelm
+ItemID 31257
+Icon Velite
+Colour 255 255 255
+Type Helmet
+Defence 0.0
+MoveSpeedModifier 1
+ArmourTexture SkinCuirassier
+Model NewAge.cuirassierHelm
+Description cuirassier helm

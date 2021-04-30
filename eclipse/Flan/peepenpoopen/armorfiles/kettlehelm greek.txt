@@ -1,0 +1,12 @@
+Name Kettle Helmet
+ShortName greekettle
+ItemID 31257
+Icon KettleHelm
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+ArmourTexture SkinRomanKettle
+Model monolith.RomanKettle
+Description Tier -3_European Helmet_Medieval Period
+headArmor 25
+Durability 100

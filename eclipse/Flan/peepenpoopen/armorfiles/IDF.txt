@@ -1,0 +1,10 @@
+Name IDF Thot
+ShortName IDF
+Icon Philip2icon
+Colour 255 255 255
+Type Body
+Defence 4
+Model monolith.IDFthot
+ArmourTexture SkinIDFthot
+Description OwW
+playermodel true

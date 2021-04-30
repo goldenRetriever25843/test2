@@ -1,0 +1,12 @@
+Name Medieval Great Helm
+ShortName CrusaderHelmet
+Icon BucketHelmet
+Colour 255 255 255
+Type Hat
+Defence 0.25
+Model monolith.GreaterHelm
+ArmourTexture SkinGreaterHelm
+Description Tier -3_European Steel Helmet_High Medieval Period
+
+headArmor 35
+Durability 100

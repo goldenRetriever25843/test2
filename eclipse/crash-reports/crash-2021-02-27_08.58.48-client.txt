@@ -1,0 +1,108 @@
+---- Minecraft Crash Report ----
+// Why is it breaking :(
+
+Time: 2/27/21 8:58 AM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at com.flansmod.client.FlansModClient.tick(FlansModClient.java:327)
+	at com.flansmod.client.TickHandlerClient.clientTickEnd(TickHandlerClient.java:1470)
+	at com.flansmod.client.TickHandlerClient.clientTick(TickHandlerClient.java:1223)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_35_TickHandlerClient_clientTick_ClientTickEvent.invoke(.dynamic)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54)
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140)
+	at cpw.mods.fml.common.FMLCommonHandler.onPostClientTick(FMLCommonHandler.java:330)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2155)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.flansmod.client.FlansModClient.tick(FlansModClient.java:327)
+	at com.flansmod.client.TickHandlerClient.clientTickEnd(TickHandlerClient.java:1470)
+	at com.flansmod.client.TickHandlerClient.clientTick(TickHandlerClient.java:1223)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_35_TickHandlerClient_clientTick_ClientTickEvent.invoke(.dynamic)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54)
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140)
+	at cpw.mods.fml.common.FMLCommonHandler.onPostClientTick(FMLCommonHandler.java:330)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player73'/49, l='MpServer', x=1704.51, y=66.31, z=3157.83]]
+	Chunk stats: MultiplayerChunkCache: 0, 0
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (99,4,111), Chunk: (at 3,0,15 in 6,6; contains blocks 96,0,96 to 111,255,111), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 30607 game time, 10622 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 19 total; [EntityItem['item.item.seeds'/64, l='MpServer', x=1685.28, y=64.13, z=3135.19], EntityItem['item.item.seeds'/65, l='MpServer', x=1691.47, y=64.13, z=3135.19], EntityItem['item.item.seeds'/66, l='MpServer', x=1669.47, y=63.13, z=3127.19], EntityBat['Bat'/67, l='MpServer', x=1741.09, y=10.72, z=3203.09], EntityBat['Bat'/68, l='MpServer', x=1741.38, y=10.66, z=3206.50], EntityBat['Bat'/69, l='MpServer', x=1742.16, y=11.34, z=3201.38], EntitySquid['Squid'/70, l='MpServer', x=1750.66, y=62.34, z=3212.84], EntitySquid['Squid'/71, l='MpServer', x=1746.50, y=62.38, z=3213.09], EntitySquid['Squid'/72, l='MpServer', x=1747.25, y=62.38, z=3211.44], EntitySquid['Squid'/73, l='MpServer', x=1751.50, y=61.00, z=3214.50], EntitySquid['Squid'/74, l='MpServer', x=1746.63, y=61.09, z=3210.09], EntitySquid['Squid'/75, l='MpServer', x=1749.50, y=61.31, z=3210.38], EntitySquid['Squid'/76, l='MpServer', x=1745.50, y=61.00, z=3211.69], EntitySquid['Squid'/77, l='MpServer', x=1747.69, y=62.31, z=3213.50], EntitySquid['Squid'/78, l='MpServer', x=1748.19, y=61.00, z=3216.59], EntityClientPlayerMP['Player73'/49, l='MpServer', x=1704.51, y=66.31, z=3157.83], EntityBat['Bat'/61, l='MpServer', x=1727.25, y=29.09, z=3175.75], EntityItem['item.item.seeds'/62, l='MpServer', x=1718.91, y=63.13, z=3181.38], EntityItem['item.item.seeds'/63, l='MpServer', x=1723.31, y=62.13, z=3180.97]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:991)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Mac OS X (x86_64) version 10.15.7
+	Java Version: 1.8.0_181, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 625076224 bytes (596 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1558 7 mods loaded, 7 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1558} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	PlayerAPI{1.4} [Player API] (minecraft.jar) 
+	UCHIJAAAA	flansmod{LabJac Mod Mark 25843 - February 2021} [Flan's Mod] (bin) 
+	UCHIJAAAA	hfr{1.7.6} [xRadar] (bin) 
+	UCHIJAAAA	SmartRender{2.1} [Smart Render] (SmartRender-dev-1.7.10-2.1.jar) 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '2.1 ATI-3.10.19' Renderer: 'AMD Radeon Pro 575 OpenGL Engine'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon Pro 575 OpenGL Engine GL version 2.1 ATI-3.10.19, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because ARB_framebuffer_object is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;nu6b27cover.txt&apos; to &apos;nu6b27cover.txt&apos;&#x0A;- Original project: &apos;Minecraft&apos;&#x0A;- Destination element: &apos;nu6b27cover.txt&apos;&#x0A;- Original element: &apos;nu6b27cover.txt&apos;" description="Copy file" element1="eclipse/Flan/peepenpoopen/armorfiles/nu6b27cover.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1608659941522" target="/Minecraft/eclipse/Flan/peepenpoopen/armorfiles/nu6b27cover.txt" units="0" version="1.0"/>
+</session>

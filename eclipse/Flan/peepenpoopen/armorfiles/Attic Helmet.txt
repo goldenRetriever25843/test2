@@ -1,0 +1,13 @@
+Name Han Helmet
+ShortName atticHelm
+ItemID 31257
+Icon HanHelmet
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+MoveSpeedModifier 0.99
+ArmourTexture SkinAtticHelmet
+Model monolith.AtticHelmet
+Description Tier -3.5_Chinese Lamellar Helmet_Han Dynasty
+headArmor 22
+Durability 50

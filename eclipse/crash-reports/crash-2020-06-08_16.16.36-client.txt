@@ -1,0 +1,109 @@
+---- Minecraft Crash Report ----
+// Ouch. That hurt :(
+
+Time: 6/8/20 4:16 PM
+Description: Ticking entity
+
+java.lang.NullPointerException: Ticking entity
+	at com.flansmod.common.driveables.EntityPlane.onUpdate(EntityPlane.java:848)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2298)
+	at net.minecraft.world.World.updateEntity(World.java:2258)
+	at net.minecraft.world.World.updateEntities(World.java:2108)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2097)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.flansmod.common.driveables.EntityPlane.onUpdate(EntityPlane.java:848)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2298)
+	at net.minecraft.world.World.updateEntity(World.java:2258)
+
+-- Entity being ticked --
+Details:
+	Entity Type: Plane (com.flansmod.common.driveables.EntityPlane)
+	Entity ID: 203
+	Entity Name: Fokker E.III
+	Entity's Exact location: -1041.11, 57.22, 1554.63
+	Entity's Block location: World: (-1042,57,1554), Chunk: (at 14,3,2 in -66,97; contains blocks -1056,0,1552 to -1041,255,1567), Region: (-3,3; contains chunks -96,96 to -65,127, blocks -1536,0,1536 to -1025,255,2047)
+	Entity's Momentum: -0.00, -1.24, 0.00
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:2108)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player221'/199, l='MpServer', x=-1041.38, y=58.67, z=1572.54]]
+	Chunk stats: MultiplayerChunkCache: 400, 400
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-1024,4,1219), Chunk: (at 0,0,3 in -64,76; contains blocks -1024,0,1216 to -1009,255,1231), Region: (-2,2; contains chunks -64,64 to -33,95, blocks -1024,0,1024 to -513,255,1535)
+	Level time: 2109 game time, 2109 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 13 total; [EntityWheel['entity.Wheel.name'/256, l='MpServer', x=-1041.15, y=56.00, z=1555.34], EntityWheel['entity.Wheel.name'/14720, l='MpServer', x=-1047.25, y=61.75, z=1569.44], EntityWheel['entity.Wheel.name'/14721, l='MpServer', x=-1040.75, y=61.94, z=1568.50], EntityCamera['unknown'/14727, l='MpServer', x=-1041.50, y=63.50, z=1568.50], EntityClientPlayerMP['Player221'/199, l='MpServer', x=-1041.38, y=58.67, z=1572.54], EntityPlane['Fokker E.III'/203, l='MpServer', x=-1041.11, y=57.22, z=1554.63], EntitySeat['entity.Seat.name'/253, l='MpServer', x=-1041.12, y=58.16, z=1554.53], EntityPlane['Fokker E.III'/14717, l='MpServer', x=-1041.50, y=63.50, z=1568.50], EntityCamera['unknown'/542, l='MpServer', x=-1041.11, y=57.22, z=1554.63], EntityWheel['entity.Wheel.name'/254, l='MpServer', x=-1039.84, y=56.00, z=1548.91], EntitySeat['entity.Seat.name'/14718, l='MpServer', x=-1041.50, y=63.13, z=1568.50], EntityWheel['entity.Wheel.name'/255, l='MpServer', x=-1041.71, y=56.00, z=1548.80], EntityWheel['entity.Wheel.name'/14719, l='MpServer', x=-1047.25, y=61.75, z=1567.56]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:984)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Mac OS X (x86_64) version 10.15.4
+	Java Version: 1.8.0_181, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 607666672 bytes (579 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1558 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAAAAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAAAAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAAAAAAA	Forge{10.13.4.1558} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAAAAAAA	flansmod{LabJac Mod Mark 25843 - April 2020} [Flan's Mod] (bin) 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '2.1 ATI-3.8.24' Renderer: 'AMD Radeon Pro 575 OpenGL Engine'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon Pro 575 OpenGL Engine GL version 2.1 ATI-3.8.24, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because ARB_framebuffer_object is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

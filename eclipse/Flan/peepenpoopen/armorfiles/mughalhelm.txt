@@ -1,0 +1,13 @@
+Name Mughal Helmet
+ShortName mughalHelm
+ItemID 31257
+Icon HussarHelm
+Colour 255 255 255
+Type Helmet
+Defence 0.25
+ArmourTexture SkinMughalHelm
+Model monolith.MughalHelm
+Description Tier -2.5_Turkish Helmet_Has Retractable Face Guard_Ottoman Empire
+ShapelessRecipe sipahiHelmOpen
+headArmor 32
+Durability 100

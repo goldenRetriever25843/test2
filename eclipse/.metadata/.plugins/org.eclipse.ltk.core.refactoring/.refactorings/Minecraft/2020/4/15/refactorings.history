@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;polybolos.txt&apos; to &apos;polybolos.txt&apos;&#x0A;- Original project: &apos;Minecraft&apos;&#x0A;- Destination element: &apos;polybolos.txt&apos;&#x0A;- Original element: &apos;polybolos.txt&apos;" description="Copy file" element1="eclipse/Flan/cringe/vehicles/polybolos.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1586142527946" target="/Minecraft/eclipse/Flan/cringe/vehicles/polybolos.txt" units="0" version="1.0"/>
+</session>

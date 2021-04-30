@@ -1,0 +1,14 @@
+Name Linothorax
+ShortName Linothorax
+ItemID 31257
+Icon Linothorax
+Colour 255 255 255
+Type Body
+Defence 0.2
+KnockbackModifier 0.5
+MoveSpeedModifier 1.01
+ArmourTexture SkinLinothorax
+Model monolith.Linothorax
+Description Tier -5_Greek Padded Armor_Archaic Period
+bodyArmor 5
+Durability 150

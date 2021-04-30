@@ -1,0 +1,14 @@
+Name Munitions Plate Armor
+ShortName palmyraMail
+ItemID 31257
+Icon MunitionsArmorLight
+Colour 255 255 255
+Type Body
+Defence 0.35
+KnockbackModifier 0.5
+MoveSpeedModifier 0.9
+ArmourTexture SkinPalmyraMail
+Model monolith.PalmyraMail
+Description Tier -2_Cheap Mass-Produced Armor_Renaissance
+bodyArmor 50
+Durability 200

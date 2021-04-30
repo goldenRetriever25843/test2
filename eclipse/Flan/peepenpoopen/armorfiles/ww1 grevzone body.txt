@@ -1,0 +1,10 @@
+Name grevzone body
+ShortName revzonebody
+ItemID 31257
+Icon GermanFeldgrauCoat
+Colour 255 255 255
+Type Body
+Defence 0.0
+ArmourTexture SkinGRevezoneBody
+Model NewAge.GRevzonebody
+ModelScale 1.1

@@ -1,0 +1,15 @@
+Name Sallet (closed)
+ShortName corinthian
+ItemID 31257
+Icon Corinthian
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+ArmourTexture SkinCorinthian
+Model monolith.Corinthian
+Overlay Corinthian
+
+Description Tier -5_Greek Bronze Helmet_Archaic Period
+
+headArmor 24
+Durability 50

@@ -1,0 +1,9 @@
+Name Teutonic Banner
+ShortName Teutonic
+Icon TeutonicIcon
+Colour 255 255 255
+Type Boots
+Defence 0
+Model NewAge.CrusadeBanner
+ArmourTexture BannerTeutonic
+Description Reserve_Teutonic Knights Identification Banner

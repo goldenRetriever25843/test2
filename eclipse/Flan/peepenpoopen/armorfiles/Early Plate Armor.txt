@@ -1,0 +1,17 @@
+Name Full Plate Armor
+ShortName fullPlate
+ItemID 31257
+Icon Cherburg
+Colour 255 255 255
+Type Body
+Defence 0.4
+KnockbackModifier 0.5
+MoveSpeedModifier 0.88
+hunger true
+ArmourTexture SkinXIVplate
+Model monolith.xivPlate
+Description Tier -3_North Italian Tailor-made Suit of Plates_Medieval Period
+
+bodyArmor 45
+armArmor 35
+Durability 250

@@ -1,0 +1,17 @@
+Name Gothic Plate Armor
+ShortName gothic
+ItemID 31257
+Icon Gothic
+Colour 255 255 255
+Type Body
+Defence 0.4
+KnockbackModifier 0.5
+MoveSpeedModifier 0.9
+hunger true
+ArmourTexture SkinGothicPlate
+Model monolith.gothicPlate
+Description Tier -2.5_German Tailor-made Suit of Plates_Early Renaissance / Late Medieval Period
+
+bodyArmor 55
+armArmor 45
+Durability 300

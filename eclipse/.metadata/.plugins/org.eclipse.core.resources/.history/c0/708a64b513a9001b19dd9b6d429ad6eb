@@ -1,0 +1,153 @@
+//Naming
+Name Altay-AHT
+ShortName altayUrban
+//Visuals
+Icon KruppGun
+Model monolith.AltayAHT
+Texture SkinAltayAHT
+ModelScale 1.0
+
+//Third Person Camera Distance
+CameraDistance 7.5
+//Throttle
+MaxThrottle 1.2
+MaxNegativeThrottle 0.9
+//Steering modifiers
+TurnLeftSpeed 0.3
+TurnRightSpeed 0.3
+//Drag
+Drag 10.0
+//For calculating whether wheels are on the ground or not for driving
+WheelRadius 1.5
+//Wheel positions for collision handling. Tanks still have 4 wheels, they are just the corner ones.
+NumWheels 4
+WheelPosition 0 -48 -12 -32
+WheelPosition 1 -48 -12 32
+WheelPosition 2 36 -12 32
+WheelPosition 3 36 -12 -32
+WheelSpringStrength 0.5
+//If true, then all wheels will apply drive forces
+FourWheelDrive true
+//Tank mode activate
+Tank true
+//Fuel Tank Size (1 point of fuel will keep one propeller going with throttle at 1 for 1 tick)
+FuelTankSize 2000
+//Inventory Slots
+CargoSlots 0
+ShellSlots 1
+//Driver and passenger positions
+Driver 0 7 0 -360 360 -10 30
+RotatedDriverOffset 28 0 -16
+Passengers 1
+Passenger 1 -20 55 0 core -360 -360 -15 60 akmTest PassengerGun1
+invisiblePassenger 1 true
+
+
+
+
+
+BarrelPosition 22 27 2 150 0 0
+ShootParticlesPrimary largeexplode 0 0 0
+ShootParticlesPrimary cloud 1 0 0
+ShootParticlesPrimary cloud 1.75 0 0
+ShootParticlesPrimary cloud 1.5 0 0
+ShootParticlesPrimary cloud 1.25 0 0
+ShootParticlesPrimary cloud 0.75 0 0
+ShootParticlesPrimary cloud 0.5 0 0
+ShootParticlesPrimary cloud 0.25 0 0
+ShootParticlesPrimary explode 1.5 0 0
+ShootParticlesPrimary largesmoke 0.5 0 0.1
+ShootParticlesPrimary largesmoke 0.5 0 -0.1
+ShootParticlesPrimary largesmoke 0.5 0.06 0.06
+ShootParticlesPrimary largesmoke 0.5 0.06 -0.06
+ShootParticlesPrimary largesmoke 0.5 -0.06 0.06
+ShootParticlesPrimary largesmoke 0.5 -0.06 -0.06
+ShootParticlesPrimary largesmoke 0.5 -0.1 0
+ShootParticlesPrimary largesmoke 0.5 0.1 0
+ShootParticlesPrimary cloud 0.05 0 0.2
+ShootParticlesPrimary cloud 0.05 0 -0.2
+ShootParticlesPrimary cloud 0.05 0.13 0.13
+ShootParticlesPrimary cloud 0.05 0.13 -0.13
+ShootParticlesPrimary cloud 0.05 -0.13 0.13
+ShootParticlesPrimary cloud 0.05 -0.13 -0.13
+ShootParticlesPrimary cloud 0.05 -0.2 0
+ShootParticlesPrimary cloud 0.05 0.2 0
+ShootParticlesPrimary explode 0.1 0 0.4
+ShootParticlesPrimary explode 0.1 0 -0.4
+ShootParticlesPrimary explode 0.1 0.26 0.26
+ShootParticlesPrimary explode 0.1 0.26 -0.26
+ShootParticlesPrimary explode 0.1 -0.26 0.26
+ShootParticlesPrimary explode 0.1 -0.26 -0.26
+ShootParticlesPrimary explode 0.1 -0.4 0
+ShootParticlesPrimary explode 0.1 0.4 0
+
+//Secondary gun
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 10
+ShellDelay 10
+PlaceTimePrimary 10
+PlaceTimeSecondary 10
+
+SetPlayerInvisible true
+
+hasScope true
+Gunsight Leclerc
+gunsightZoom 5
+thermalSight true
+
+PlaceTimePrimary 10
+PlaceTimeSecondary 10
+
+AllowAllAmmo false
+AddAmmo KruppPenTest
+AddAmmo KruppPenTestDecay
+AddAmmo KruppPenTest300
+AddAmmo KruppPenTest95
+AddAmmo KruppPenTest1000
+AddAmmo KruppPenTest300Decay
+AddAmmo KruppPenTest300HEAT
+
+BulletSpeed 3
+BulletSpread 1
+
+//Sounds
+StartSound ATGun_movement
+StartSoundLength 30
+EngineSound ATGun_movement
+EngineSoundLength 30
+
+
+ShootSoundPrimary 88mmFire
+ShootSoundSecondary None
+farSound 88mmFar
+
+
+Primary Shell
+ModePrimary FullAuto
+ShootDelayPrimary 30
+//Recipe
+//Each section of the plane may have many parts
+//The sections are tailWheel, tail, bay, topWing, leftWingWheel, leftWing, rightWingWheel,
+//rightWing, nose, turret, coreWheel, core
+AddRecipeParts core 1 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+BulletDetection 5
+RotateWheels true
+canDabOnEntity true
+
+SetupPart core 100 -50 -2 -9 42 20 18
+SetupPart frontalArmor 100 -8 -2 -18 67 21 36
+SetupPart engine 10 -91 3 -20 40 16 40
+SetupPart leftTrack 100 -58 -10 -28 102 25 21
+SetupPart rightTrack 100 -58 -10 9 102 25 21
+SetupPart turret 100 -22 19 -19 14 17 40
+SetupPart turretarmor 100 -8 19 -20 60 19 42
+SetupPart weakTrt 20 -45 25 -15 22 9 32
+SetupPart weakSpot2 20 -20 -1 -20 30 5 40
+
+
+Description Tier -1_German Breech-Loaded Steel Cannon_19th Century
+
+WeakspotCookTime 4
+hasMagicArtilleryMode true

@@ -1,0 +1,288 @@
+//Naming
+Name Akula 1907
+ShortName oldAkula
+//Visuals
+Icon 6Pounder
+Model monolith.Akula1907
+Texture SkinAkula1907
+ModelScale 3.0
+autisticHitDetection true
+
+//Third Person Camera Distance
+CameraDistance 30
+//Throttle
+MaxThrottle 1
+MaxNegativeThrottle 1
+//Steering modifiers
+TurnLeftSpeed 0.5
+TurnRightSpeed 0.5
+//Drag
+Drag 10.0
+//For calculating whether wheels are on the ground or not for driving
+WheelRadius 1.5
+//Wheel positions for collision handling. Tanks still have 4 wheels, they are just the corner ones.
+NumWheels 4
+WheelPosition 0 -28 -42 -22
+WheelPosition 1 -28 -42 22
+WheelPosition 2 26 -42 22
+WheelPosition 3 26 -42 -22
+WheelSpringStrength 0.5
+//If true, then all wheels will apply drive forces
+FourWheelDrive true
+//Tank mode activate
+Tank true
+//Fuel Tank Size (1 point of fuel will keep one propeller going with throttle at 1 for 1 tick)
+FuelTankSize 2000
+//Inventory Slots
+CargoSlots 0
+ShellSlots 1
+
+
+//Driver and passenger positions
+Driver 6 -20 0
+Passengers 0
+
+barrels 6 2
+barrelSpread 6 1
+
+barrels 2 3
+barrelSpread 2 1
+
+barrels 3 4
+barrelSpread 3 1
+
+
+BarrelPosition 0 15 0 30 0 0
+//Secondary gun
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 10
+ShellDelay 20
+PlaceTimePrimary 20
+PlaceTimeSecondary 20
+AddGun 119 72 0 citadel akmTest
+
+AllowAllAmmo false
+AddAmmo 6pndrShot
+AddAmmo MediumCanister
+AddAmmo klishnikov40dmg
+
+BulletSpeed 7
+BulletSpread 3
+
+//Sounds
+StartSound ATGun_movement
+StartSoundLength 30
+EngineSound ATGun_movement
+EngineSoundLength 30
+ShootSoundPrimary HandCannon
+ShootSoundSecondary HandCannon
+//Recipe
+//Each section of the plane may have many parts
+//The sections are tailWheel, tail, bay, topWing, leftWingWheel, leftWing, rightWingWheel,
+//rightWing, nose, turret, coreWheel, core
+AddRecipeParts core 1 Repair
+AddRecipeParts bow 1 Repair
+AddRecipeParts stern 1 Repair
+AddRecipeParts left 1 Repair
+AddRecipeParts right 1 Repair
+AddRecipeParts belt 1 Repair
+AddRecipeParts superstructure 1 Repair
+AddRecipeParts citadel 1 Repair
+AddRecipeParts turret1 1 Repair
+AddRecipeParts turret2 1 Repair
+AddRecipeParts turret3 1 Repair
+AddRecipeParts turret4 1 Repair
+AddRecipeParts turret5 1 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+SetupArmoredPart buoyancy 100 -1 -25843 -1 2 2 2 25843
+SetupCrewedPart bow 200 100 -30 -35 250 55 70 30 25
+SetupCrewedPart superstructure 200 -60 20 -25 200 30 50 50 100
+SetupCrewedPart citadel 200 105 50 -20 30 30 40 50 75
+SetupCrewedPart stern 200 -350 -40 -40 250 50 80 30 100
+SetupCrewedPart left 200 -180 -40 -55 340 57 55 30 100
+SetupCrewedPart right 200 -180 -40 0 340 57 55 30 100
+SetupCrewedPart belt 200 -200 -20 -65 400 35 130 279 1
+SetupCrewedPart deck 200 -150 15 -45 300 5 90 76 25
+SetupCrewedPart turret1 200 26 17 -58 40 18 40 300 50
+SetupCrewedPart turret2 200 26 17 18 40 18 40 300 50
+SetupCrewedPart turret3 200 -108 10 -20 40 18 40 300 50
+SetupCrewedPart turret4 200 -229 10 -20 40 18 40 300 50
+SetupCrewedPart turret5 200 143 25 -20 40 18 40 300 50
+
+SetupCrewedPart core 200 -60 20 -25 200 30 50 50 100
+BulletDetection 40
+RotateWheels True
+solid true
+epicShip true
+
+ShootParticlesPrimary smokeShell 0 0 0
+ShootParticlesPrimary largeexplode 5 0 0
+ShootParticlesPrimary hugeexplosion 7 0 0
+ShootParticlesPrimary explode 4 0 0
+ShootParticlesPrimary explode 4 0 0
+ShootParticlesPrimary explode 4 0 0
+ShootParticlesPrimary explode 4 0 0
+ShootParticlesPrimary explode 4 0 0
+ShootParticlesPrimary explode 4 1 0
+ShootParticlesPrimary explode 4 1 0
+ShootParticlesPrimary explode 4 1 0
+ShootParticlesPrimary explode 4 1 0
+ShootParticlesPrimary explode 4 1 0
+ShootParticlesPrimary explode 4 -1 0
+ShootParticlesPrimary explode 4 -1 0
+ShootParticlesPrimary explode 4 -1 0
+ShootParticlesPrimary explode 4 -1 0
+ShootParticlesPrimary explode 4 -1 0
+ShootParticlesPrimary explode 4 0 1
+ShootParticlesPrimary explode 4 0 1
+ShootParticlesPrimary explode 4 0 1
+ShootParticlesPrimary explode 4 0 1
+ShootParticlesPrimary explode 4 0 1
+ShootParticlesPrimary explode 4 0 -1
+ShootParticlesPrimary explode 4 0 -1
+ShootParticlesPrimary explode 4 0 -1
+ShootParticlesPrimary explode 4 0 -1
+ShootParticlesPrimary explode 4 0 -1
+ShootParticlesPrimary explode 5 0 0
+ShootParticlesPrimary explode 5 0 0
+ShootParticlesPrimary explode 5 0 0
+ShootParticlesPrimary explode 5 0 0
+ShootParticlesPrimary explode 5 0 0
+ShootParticlesPrimary explode 5 1 0
+ShootParticlesPrimary explode 5 1 0
+ShootParticlesPrimary explode 5 1 0
+ShootParticlesPrimary explode 5 1 0
+ShootParticlesPrimary explode 5 1 0
+ShootParticlesPrimary explode 5 1 1
+ShootParticlesPrimary explode 5 1 1
+ShootParticlesPrimary explode 5 1 1
+ShootParticlesPrimary explode 5 1 1
+ShootParticlesPrimary explode 5 1 1
+ShootParticlesPrimary explode 5 1 -1
+ShootParticlesPrimary explode 5 1 -1
+ShootParticlesPrimary explode 5 1 -1
+ShootParticlesPrimary explode 5 1 -1
+ShootParticlesPrimary explode 5 1 -1
+ShootParticlesPrimary explode 5 -1 0
+ShootParticlesPrimary explode 5 -1 0
+ShootParticlesPrimary explode 5 -1 0
+ShootParticlesPrimary explode 5 -1 0
+ShootParticlesPrimary explode 5 -1 0
+ShootParticlesPrimary explode 5 -1 -1
+ShootParticlesPrimary explode 5 -1 -1
+ShootParticlesPrimary explode 5 -1 -1
+ShootParticlesPrimary explode 5 -1 -1
+ShootParticlesPrimary explode 5 -1 -1
+ShootParticlesPrimary explode 5 -1 1
+ShootParticlesPrimary explode 5 -1 1
+ShootParticlesPrimary explode 5 -1 1
+ShootParticlesPrimary explode 5 -1 1
+ShootParticlesPrimary explode 5 -1 1
+ShootParticlesPrimary explode 5 0 1
+ShootParticlesPrimary explode 5 0 1
+ShootParticlesPrimary explode 5 0 1
+ShootParticlesPrimary explode 5 0 1
+ShootParticlesPrimary explode 5 0 1
+ShootParticlesPrimary explode 5 0 -1
+ShootParticlesPrimary explode 5 0 -1
+ShootParticlesPrimary explode 5 0 -1
+ShootParticlesPrimary explode 5 0 -1
+ShootParticlesPrimary explode 5 0 -1
+ShootParticlesPrimary cloud 4 0 0
+ShootParticlesPrimary cloud 4 0 0
+ShootParticlesPrimary cloud 4 0 0
+ShootParticlesPrimary cloud 4 0 0
+ShootParticlesPrimary cloud 4 0 0
+ShootParticlesPrimary cloud 4 1 0
+ShootParticlesPrimary cloud 4 1 0
+ShootParticlesPrimary cloud 4 1 0
+ShootParticlesPrimary cloud 4 1 0
+ShootParticlesPrimary cloud 4 1 0
+ShootParticlesPrimary cloud 4 -1 0
+ShootParticlesPrimary cloud 4 -1 0
+ShootParticlesPrimary cloud 4 -1 0
+ShootParticlesPrimary cloud 4 -1 0
+ShootParticlesPrimary cloud 4 -1 0
+ShootParticlesPrimary cloud 4 0 1
+ShootParticlesPrimary cloud 4 0 1
+ShootParticlesPrimary cloud 4 0 1
+ShootParticlesPrimary cloud 4 0 1
+ShootParticlesPrimary cloud 4 0 1
+ShootParticlesPrimary cloud 4 0 -1
+ShootParticlesPrimary cloud 4 0 -1
+ShootParticlesPrimary cloud 4 0 -1
+ShootParticlesPrimary cloud 4 0 -1
+ShootParticlesPrimary cloud 4 0 -1
+ShootParticlesPrimary cloud 5 0 0
+ShootParticlesPrimary cloud 5 0 0
+ShootParticlesPrimary cloud 5 0 0
+ShootParticlesPrimary cloud 5 0 0
+ShootParticlesPrimary cloud 5 0 0
+ShootParticlesPrimary cloud 5 1 0
+ShootParticlesPrimary cloud 5 1 0
+ShootParticlesPrimary cloud 5 1 0
+ShootParticlesPrimary cloud 5 1 0
+ShootParticlesPrimary cloud 5 1 0
+ShootParticlesPrimary cloud 5 1 1
+ShootParticlesPrimary cloud 5 1 1
+ShootParticlesPrimary cloud 5 1 1
+ShootParticlesPrimary cloud 5 1 1
+ShootParticlesPrimary cloud 5 1 1
+ShootParticlesPrimary cloud 5 1 -1
+ShootParticlesPrimary cloud 5 1 -1
+ShootParticlesPrimary cloud 5 1 -1
+ShootParticlesPrimary cloud 5 1 -1
+ShootParticlesPrimary cloud 5 1 -1
+ShootParticlesPrimary cloud 5 -1 0
+ShootParticlesPrimary cloud 5 -1 0
+ShootParticlesPrimary cloud 5 -1 0
+ShootParticlesPrimary cloud 5 -1 0
+ShootParticlesPrimary cloud 5 -1 0
+ShootParticlesPrimary cloud 5 -1 -1
+ShootParticlesPrimary cloud 5 -1 -1
+ShootParticlesPrimary cloud 5 -1 -1
+ShootParticlesPrimary cloud 5 -1 -1
+ShootParticlesPrimary cloud 5 -1 -1
+ShootParticlesPrimary cloud 5 -1 1
+ShootParticlesPrimary cloud 5 -1 1
+ShootParticlesPrimary cloud 5 -1 1
+ShootParticlesPrimary cloud 5 -1 1
+ShootParticlesPrimary cloud 5 -1 1
+ShootParticlesPrimary cloud 5 0 1
+ShootParticlesPrimary cloud 5 0 1
+ShootParticlesPrimary cloud 5 0 1
+ShootParticlesPrimary cloud 5 0 1
+ShootParticlesPrimary cloud 5 0 1
+ShootParticlesPrimary cloud 5 0 -1
+ShootParticlesPrimary cloud 5 0 -1
+ShootParticlesPrimary cloud 5 0 -1
+ShootParticlesPrimary cloud 5 0 -1
+ShootParticlesPrimary cloud 5 0 -1
+
+Description 100 health 100 armor
+
+
+//AddSmokePoint [0,36,-18] [1,0.75,-0.05] 20 turret
+//HasFlare true
+//HasSmoke true
+//hasAPS false
+
+//FlareDelay 1000
+//FlareSound Flare
+//TimeFlareUsing 40
+
+
+AccelerationSpeed 10
+//autoSmoke false
+
+
+canDive true
+DiveSpeed 0.8
+SurfaceSpeed 0.7
+oxygen 2000
+maxOxygen 2000
+maxDepth 40
+
+PlaceableOnWater True
+FloatOnWater True

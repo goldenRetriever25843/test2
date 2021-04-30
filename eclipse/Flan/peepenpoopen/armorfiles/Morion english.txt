@@ -1,0 +1,12 @@
+Name Morion
+ShortName morionEnglish
+ItemID 31257
+Icon Morion
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+ArmourTexture SkinEnglishMorion
+Model monolith.EnglishMorion
+Description Tier -2_Spanish Light Helmet_Renaissance
+headArmor 30
+Durability 100

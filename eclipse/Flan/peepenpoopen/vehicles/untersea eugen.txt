@@ -1,0 +1,109 @@
+//Naming
+Name Mons Meg
+ShortName eugenSub
+//Visuals
+Icon KruppGun
+Model monolith.eugenLowres
+Texture SkinPrinzEugenOptimized1
+ModelScale 0.25
+
+//Third Person Camera Distance
+CameraDistance 30.5
+//Throttle
+MaxThrottle 0.4
+MaxNegativeThrottle 0.1
+//Steering modifiers
+TurnLeftSpeed 0.4
+TurnRightSpeed 0.4
+//Drag
+Drag 10.0
+//For calculating whether wheels are on the ground or not for driving
+WheelRadius 1.5
+//Wheel positions for collision handling. Tanks still have 4 wheels, they are just the corner ones.
+NumWheels 4
+WheelPosition 0 -28 -12 -22
+WheelPosition 1 -28 -12 22
+WheelPosition 2 26 -12 22
+WheelPosition 3 26 -12 -22
+WheelSpringStrength 0.5
+//If true, then all wheels will apply drive forces
+FourWheelDrive true
+//Tank mode activate
+Tank true
+//Fuel Tank Size (1 point of fuel will keep one propeller going with throttle at 1 for 1 tick)
+FuelTankSize 2000
+//Inventory Slots
+CargoSlots 0
+ShellSlots 1
+//Driver and passenger positions
+Driver 346 69 0 -360 360 -70 90
+Passengers 4
+Passenger 1 456 54 0 core -180 180 -5 30 akmTest OuterFront
+Passenger 2 416 68 0 core -180 180 -5 30 akmTest InnerFront
+Passenger 3 -261 69 0 core -180 180 -5 30 akmTest InnerRear
+Passenger 4 -335 54 0 core -180 180 -5 30 akmTest OuterRear
+GunOrigin 0 1000 -236 0
+GunOrigin 1 1000 -167 0
+GunOrigin 2 -864 -236 0
+GunOrigin 3 -1000 -165 0
+GunOrigin 4 -1000 -165 0
+BarrelPosition 0 10 0 40 0 0
+//Secondary gun
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 10
+ShellDelay 10
+PlaceTimePrimary 10
+PlaceTimeSecondary 10
+
+PlaceTimePrimary 10
+PlaceTimeSecondary 10
+
+AllowAllAmmo false
+AddAmmo KruppPenTest
+AddAmmo KruppPenTestDecay
+AddAmmo KruppPenTest300
+AddAmmo KruppPenTest95
+AddAmmo KruppPenTest1000
+AddAmmo KruppPenTest300Decay
+AddAmmo KruppPenTest300HEAT
+AddAmmo Bouncy
+
+BulletSpeed 1
+BulletSpread 0
+
+//Sounds
+StartSound ATGun_movement
+StartSoundLength 30
+EngineSound ATGun_movement
+EngineSoundLength 30
+ShootSoundPrimary None
+ShootSoundSecondary None
+//Recipe
+//Each section of the plane may have many parts
+//The sections are tailWheel, tail, bay, topWing, leftWingWheel, leftWing, rightWingWheel,
+//rightWing, nose, turret, coreWheel, core
+AddRecipeParts core 1 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+SetupPart core 100 -20 -4 -25 40 16 50
+BulletDetection 3
+RotateWheels true
+canDabOnEntity true
+
+
+Description Tier -1_German Breech-Loaded Steel Cannon_19th Century
+
+canDive true
+DiveSpeed 1
+SurfaceSpeed 1
+//160 is about one second
+oxygen 9000
+maxOxygen 9000
+unlimitedOxygen false
+MaxDepth 20
+
+PlaceableOnLand False
+PlaceableOnWater True
+FloatOnWater True
+WheelStepHeight 0
+Buoyancy 0.08

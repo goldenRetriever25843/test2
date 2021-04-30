@@ -1,0 +1,12 @@
+Name Burgh Castle Helmet
+ShortName burghcastle
+ItemID 31257
+Icon RomeHelmet
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+ArmourTexture SkinBurghCastle
+Model monolith.BurghCastle
+Description Tier -3.5_Roman Iron Helmet_Imperial Period
+headArmor 25
+Durability 50

@@ -1,0 +1,18 @@
+Name Juggernaut Helmet (Open)
+ShortName jugghelmopen
+ItemID 31257
+Icon iconjugghelmopen
+Colour 255 255 255
+Type Helmet
+Defence 0.05
+KnockbackModifer 0.1
+MoveSpeedModifier 0.95
+blast_protection .05
+ArmourTexture skinjuggernauthelmopen
+Model CowPack.jugghelmopen
+ModelScale 1.05
+
+Description Tier 4_Heavy Duty Helmet (Open Visor) 
+ShapelessRecipe jugghelmclosed
+headArmor 15
+Durability 100

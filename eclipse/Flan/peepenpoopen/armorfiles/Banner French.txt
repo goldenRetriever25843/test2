@@ -1,0 +1,10 @@
+Name Philip II Banner
+ShortName Philip2
+Icon Philip2icon
+Colour 255 255 255
+Type Boots
+Defence 0
+Model NewAge.CrusadeFrenchBanner
+ArmourTexture BannerFrench
+Description Reserve_French Identification Banner
+playermodel true

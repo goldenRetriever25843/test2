@@ -1,0 +1,16 @@
+Name Han Light Lamellar Armor
+ShortName HanHeavyArmor
+ItemID 31257
+Icon HanHeavyArmor
+Colour 255 255 255
+Type Body
+Defence 0.35
+KnockbackModifier 0.5
+MoveSpeedModifier 0.95
+hunger True
+ArmourTexture SkinHanHeavy
+Model monolith.HanHeavyArmor
+Description Tier -3.5_Chinese Heavy Lamellar Armor_Made of Iron_Han Dynasty
+bodyArmor 22
+armArmor 20
+Durability 150

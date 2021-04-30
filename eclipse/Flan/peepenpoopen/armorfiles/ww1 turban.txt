@@ -1,0 +1,11 @@
+Name spain Hat WW1
+ShortName generiTurbanMark2
+ItemID 31257
+Icon Velite
+Colour 255 255 255
+Type Helmet
+Defence 0.0
+MoveSpeedModifier 1
+ArmourTexture SkinGenericTurban
+Model NewAge.GenericTurban
+Description bulgar

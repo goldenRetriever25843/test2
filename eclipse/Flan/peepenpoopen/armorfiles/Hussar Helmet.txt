@@ -1,0 +1,13 @@
+Name Winged Hussar Helmet
+ShortName hussarHelm
+ItemID 31257
+Icon HussarHelm
+Colour 255 255 255
+Type Helmet
+Defence 0.25
+ArmourTexture HussarHelm
+Model monolith.HussarHelm
+Overlay Hussar
+Description Tier -2_Polish/Lithuanian Helmet_Late Renaissance
+headArmor 30
+Durability 100

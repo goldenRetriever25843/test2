@@ -1,0 +1,221 @@
+// ------------------------------------------------------ Naming ------------------------------------------------------
+Name Yak-38 Afterburn
+ShortName unicornAfterburn
+// ------------------------------------------------------ Visuals ------------------------------------------------------
+Icon yak38legit
+Model monolith.Unicorn262
+Texture SkinUnicorn262
+//Third Person Camera Distance
+CameraDistance 15.0
+//Resting Pitch. Set this so the plane spawns level. It will fall onto its collision boxes automatically, but this lets you start it flat
+RestingPitch 5.0
+HasGear True
+ModelScale 1.0
+
+missileVisible true
+missileWingSpan 4
+missileForward -0.2
+missileElevation -0.1
+// ------------------------------------------------------ Movement ------------------------------------------------------
+//Mode : One of Plane, Heli or VTOL. The VTOL has a toggle button that switches some model aesthetics and the flight mode
+Mode Plane
+//Throttle
+MaxThrottle 1.8
+MaxNegativeThrottle 0.0
+//Yaw modifiers
+TurnLeftSpeed 1.8
+TurnRightSpeed 1.8
+//Pitch modifiers
+LookUpSpeed 2.7
+LookDownSpeed 2.7
+//Roll modifiers
+RollLeftSpeed 2.0
+RollRightSpeed 2.0
+//Drag 1.0 is standard. Modify to make the plane / heli more or less sluggish
+Drag 0.3
+//Lift
+//Lift 2.5
+//Wheels
+NumWheels 3
+WheelPosition 0 -92 -22 -15
+WheelPosition 1 -92 -22 15
+WheelPosition 2 12 -19 0
+WheelSpringStrength 0.125
+
+
+//so wing is subsonic mode by default
+swapInitialWing true
+
+//---new shit ---
+//max speeds sea level and high alt when afterburning or WEPing
+maxSpeed 1.8
+highAltMax 3.13
+
+//max speeds sea level and high alt when not afterburning dry thrust cruise speed
+maxSpeedDry 1.42
+highAltMaxDry 1.5
+
+//max speed during a high energy death dive
+diveBonus 3.2
+//max speed when dying from low energy stall climb
+stallSuffering 0.5
+
+//bonus multiplier for gaining energy while diving
+energyGainRate 3
+
+//how fast energy is lost multiplier
+energyLossRate 2
+
+//flight ceiling
+flightCeiling 1500
+
+//maneuvrability multipliers applied when max energy, if low energy defaults to just x1  you can also use -0.x to simulate controls locking up at high speed
+//due to match cringe, the multiplier maxes out at 1 + whatever you typed
+rollBonus 2
+yawBonus 20
+pitchBonus 2
+
+//maneuvrability multiplier + 1 when low energy stall   i made pitch down high regardless of what you did to help people push nose down to exit stall
+rollStall 0.5
+yawStall 0.5
+pitchStall 20
+
+
+
+hasAfterBurner true
+//use this to rename afterburner to WEP or 110% throttle or Notleistung or whatever the fuck
+afterBurnName Afterburner
+
+//afterburner particle emitter
+particleAfterBurn flansmod.fmflame 1 [-179,25,-27] [3,3,3] [3,0,0] tail
+particleAfterBurn flansmod.fmflame 1 [-179,25,27] [3,3,3] [3,0,0] tail
+
+//multiplier to fuel consumption when afterburner on
+afterBurnFuelPenalty 3
+
+//measured in seconds at 100%throttle afterburner off
+labjacFuel 270
+//---end of new shit----
+Propeller 0 54 0 0 core Repair
+HeliPropeller 0 54 0 0 core Repair
+// ------------------------------------------------------ Weaponry ------------------------------------------------------
+//Weapon types. Options are Missile, Bomb, Gun, Shell, None
+Primary Bomb
+ShootParticlesPrimary flame 0 0 0
+Secondary Shell
+//Time between shots in 1/20ths of seconds
+ShootDelayPrimary 4
+ShootDelaySecondary 4
+//Whether to alternate or fire all together
+AlternatePrimary True
+AlternateSecondary True
+//Firing modes. One of SemiAuto, FullAuto or Minigun
+ModePrimary FullAuto
+ModeSecondary FullAuto
+//Add shoot origins. These are the points on your vehicle from which bullets / missiles / shells / bombs appear
+ShootPointPrimary 108 24 0 core
+ShootPointPrimary 107 24 0 core
+ShootPointPrimary 106 24 0 core
+ShootPointSecondary 106 24 0 core
+
+// ------------------------------------------------------ Inventory ------------------------------------------------------
+CargoSlots 0
+BombSlots 4
+MissileSlots 4
+AllowAllAmmo false
+AddAmmo KruppPenTest
+AddAmmo KruppPenTestDecay
+AddAmmo KruppPenTest300
+AddAmmo KruppPenTest95
+AddAmmo KruppPenTest1000
+AddAmmo KruppPenTest300Decay
+AddAmmo KruppPenTest300HEAT
+AddAmmo ammoModelTest
+AddAmmo BouncyAngel
+AddAmmo bombTest
+//Fuel Tank Size (1 point of fuel will keep one propeller going with throttle at 1 for 1 tick)
+FuelTankSize 6000
+// ------------------------------------------------------ Passengers ------------------------------------------------------
+Pilot 9 12 0
+Passengers 0
+flightCeiling 1100
+helipadLandable true
+// ------------------------------------------------------ Sounds ------------------------------------------------------
+StartSound HarrierIdle
+StartSoundLength 140
+PropSound HarrierRun
+PropSoundLength 41
+ShootSoundPrimary 30mmcannon
+ShootSoundSecondary RocketFire2
+PlaceSoundPrimary BF109_PlaceSound
+
+
+maxSpeedDry 0.6
+maxSpeed 1.5
+
+sonicBoomSound sonicBoom
+hasAfterBurner true
+afterBurnName Afterburner
+particleAfterBurn flansmod.fmflame 1 [-41,10,0] [3,3,3] [3,0,0] tail
+afterBurnFuelPenalty 3
+labjacFuel 900
+// ------------------------------------------------------ Recipe ------------------------------------------------------
+//Each section of the plane may have many parts
+//The sections are tailWheel, tail, bay, topWing, leftWingWheel, leftWing, rightWingWheel,
+//rightWing, nose, turret, coreWheel, core
+AddRecipeParts core 1 Repair
+AddRecipeParts leftWing 1 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+// ------------------------------------------------------ Health and hitboxes ------------------------------------------------------
+SetupPart core 35 39 8 -5 10 20 10
+SetupPart leftWing 35 39 8 -5 10 20 10
+BulletDetection 3
+
+
+CollisionPoint 0 30 50 leftWing
+CollisionPoint 148 30 0 core
+CollisionPoint 148 30 0 core
+CollisionPoint 148 30 0 core
+CollisionPoint 148 30 0 core
+CollisionPoint 148 30 0 core
+
+IsExplosionWhenDestroyed true
+CollisionDamageEnable true
+CollisionDamageThrottle 0.3
+CollisionDamageTimes 40
+
+BulletSpeed 3
+BulletSpread 2
+
+Description Tier 3_Russian VTOL Fighter_1100 Block Flight Ceiling
+
+
+ShootParticlesPrimary cloud 0 0 0
+ShootParticlesSecondary cloud 1 0 0
+ShootParticlesSecondary cloud -1 0 0
+ShootParticlesSecondary explode -1 0 0
+ShootParticlesSecondary flame -1 0 0
+
+ReloadSoundPrimary PG_reload
+ReloadTimePrimary 5
+ReloadTimeSecondary 5
+ReloadSoundSecondary PlaneBomb_reload1
+
+EngineSoundRange 1000
+
+HasFlare True
+FlareDelay 480
+FlareSound Flare
+TimeFlareUsing 5
+LockedOnSound Lock
+SoundTime 8
+LockedOnSoundRange 15
+
+
+hasPlaneRadar true
+radarPositionOffset 20
+radarRange 2000
+radarVisible true 
+radarRefreshDelay 5
+
+digitalRadar true

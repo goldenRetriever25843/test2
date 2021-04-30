@@ -1,0 +1,12 @@
+Name Jaguar Armor
+ShortName jaguarBody
+ItemID 31257
+Icon HanLight
+Colour 255 255 255
+Type Body
+Defence 0.2
+KnockbackModifier 0.5
+MoveSpeedModifier 0.99
+ArmourTexture SkinJaguar
+Model monolith.JaguarBody
+Description Tier -4_Aztec Armor

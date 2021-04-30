@@ -1,0 +1,13 @@
+Name Red Padded Armor
+ShortName hastati
+ItemID 31257
+Icon GambesonRed
+Colour 255 255 255
+Type Body
+Defence 0.15
+ArmourTexture SkinHastati
+Model monolith.Hastati
+Description Shitty Roman Armor
+bodyArmor 5
+Durability 150
+ModelScale 1.05

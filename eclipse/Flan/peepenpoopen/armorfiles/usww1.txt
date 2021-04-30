@@ -1,0 +1,10 @@
+Name Texan Armor
+ShortName usww1
+ItemID 31257
+Icon GermanFeldgrauCoat
+Colour 255 255 255
+Type Body
+Defence 0.0
+ArmourTexture Skin_Armor_usww1final
+Model monolith.usww1final
+ModelScale 1.05

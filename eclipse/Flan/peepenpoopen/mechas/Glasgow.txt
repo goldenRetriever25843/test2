@@ -1,0 +1,73 @@
+//Naming
+Name Glasgow
+ShortName Glasgow
+ItemID 7462
+//Visuals
+Icon Glasgow
+Model monolith.Glasgow
+Texture GlasgowTextureFix
+//Third Person Camera Distance
+CameraDistance 7.5
+//Driver and passenger positions
+Driver 0 65 0 -360 360 -85 45
+Passengers 0
+//Offset of driver from the point of rotation
+RotatedDriverOffset -22 0 0
+//Speed Modifier, 1 is player speed
+MoveSpeed 0.8
+//YOffset
+YOffset 0
+//Fuel Tank Size
+FuelTankSize 10000
+//Inventory Slots
+CargoSlots 24
+//How quickly the legs react to a change in direction
+RotateSpeed 15
+//Will it squash puny mobs?
+SquashMobs true
+//Step Height (Integer) and Jump Height (Float)
+StepHeight 2
+JumpHeight 5
+//Arm origins used to rotate arm models and calculate position of held item / tool (positions in model co-ordinates)
+LeftArmOrigin -1 81 -15
+RightArmOrigin -1 81 14
+//Arm lengths used to determine where the held items appear (Again in model co-ords)
+ArmLength 38
+LegLength 40
+//The scale multiplier for rendering the items and tools being held (1 will automatically scale with model)
+HeldItemScale 1
+//Recipe
+//Each section of the mecha may have many parts
+//The sections are core, leftArm, rightArm, hips, head
+AddRecipeParts core 16 Repair
+AddRecipeParts leftArm 2 Repair
+AddRecipeParts rightArm 2 Repair
+AddRecipeParts hips 4 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+SetupPart core 800 -30 54 -15 44 35 30
+SetupPart hips 300 -10 0 -14 20 54 28
+SetupPart rightArm 250 -7 69 -32 53 16 14
+SetupPart leftArm 250 -7 69 32 53 16 -14
+BulletDetection 6
+//Height and Width for world collision
+Height 90
+Width 30
+//Height of chassis above the ground
+ChassisHeight 15
+//The amount of damage the mecha should take from falling
+FallDamageMultiplier 1.0
+//Whether to actually take fall damage. Can be overriden by upgrades
+TakeFallDamage false
+//The size of explosion to create per distance fallen upon hitting the ground
+BlockDamageFromFalling 2.0
+//Whether to actually damage the ground. Can be overridden by upgrades
+DamageBlocksFromFalling false
+ModelScale 1
+LimitHeadTurn True 80
+LegSwingLimit 6
+UpperArmLimit 45
+LowerArmLimit 90
+
+Description Tier 4_Combat Frame
+IsExplosionWhenDestroyed true

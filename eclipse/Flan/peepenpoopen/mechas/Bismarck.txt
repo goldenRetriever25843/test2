@@ -1,0 +1,77 @@
+//Naming
+Name Iowa Fleet Girl
+ShortName BismarckMechLessGear
+ItemID 7462
+//Visuals
+Icon BismarckCG
+Model monolith.BismarckMech
+Texture SkinBismarckBeach
+//Third Person Camera Distance
+CameraDistance 13.0
+//Driver and passenger positions
+Driver 0 120 0 -50 50 -85 55
+Passengers 0
+//Offset of driver from the point of rotation
+RotatedDriverOffset 0 0 0
+//Speed Modifier, 1 is player speed
+MoveSpeed 0.5
+//YOffset
+YOffset 0
+//Fuel Tank Size
+FuelTankSize 10000
+//Inventory Slots
+CargoSlots 56
+//How quickly the legs react to a change in direction
+RotateSpeed 10
+//Will it squash puny mobs?
+SquashMobs true
+//Step Height (Integer) and Jump Height (Float)
+StepHeight 2
+JumpHeight 7
+//Arm origins used to rotate arm models and calculate position of held item / tool (positions in model co-ordinates)
+LeftArmOrigin 0 77 -58
+RightArmOrigin 0 77 58
+//Arm lengths used to determine where the held items appear (Again in model co-ords)
+ArmLength 13
+LegLength 17
+//The scale multiplier for rendering the items and tools being held (1 will automatically scale with model)
+HeldItemScale 0.0001
+//Recipe
+//Each section of the mecha may have many parts
+//The sections are core, leftArm, rightArm, hips, head
+AddRecipeParts core 50 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+SetupPart core 13500 -80 24 -80 164 350 160
+BulletDetection 25
+//Height and Width for world collision
+Height 150
+Width 50
+//Height of chassis above the ground
+ChassisHeight 140
+//The amount of damage the mecha should take from falling
+FallDamageMultiplier 1.0
+//Whether to actually take fall damage. Can be overriden by upgrades
+TakeFallDamage false
+//The size of explosion to create per distance fallen upon hitting the ground
+BlockDamageFromFalling 11.0
+//Whether to actually damage the ground. Can be overridden by upgrades
+DamageBlocksFromFalling true
+ModelScale 3.85
+LegSwingLimit 3
+UpperArmLimit 45
+LowerArmLimit 70
+LimitHeadTurn True 50
+
+Description Tier 5_German Battleship Fleet Girl
+IsExplosionWhenDestroyed False
+
+PlaceSoundPrimary Doitsu
+
+DriverAimSpeed 3.2 3 0
+DriverYawBeforePitch false
+
+SetPlayerInvisible true
+
+AllowAllGuns false
+AddGun SongCrossbow

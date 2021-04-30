@@ -1,0 +1,72 @@
+//Naming
+Name Kraken
+ShortName kraken
+ItemID 7462
+//Visuals
+Icon ED209
+Model monolith.Kraken
+Texture SkinKraken
+//Third Person Camera Distance
+CameraDistance 7.5
+//Driver and passenger positions
+Driver 0 60 0
+RotatedDriverOffset -1 0 0
+Passengers 0
+//Offset of driver from the point of rotation
+//Speed Modifier, 1 is player speed
+MoveSpeed 0.7
+//YOffset
+YOffset 0
+//Fuel Tank Size
+FuelTankSize 10000
+//Inventory Slots
+CargoSlots 24
+//How quickly the legs react to a change in direction
+RotateSpeed 8
+//Will it squash puny mobs?
+SquashMobs true
+//Step Height (Integer) and Jump Height (Float)
+StepHeight 3
+JumpHeight 4
+//Arm origins used to rotate arm models and calculate position of held item / tool (positions in model co-ordinates)
+LeftArmOrigin 0 0 0
+RightArmOrigin 0 0 0
+//Arm lengths used to determine where the held items appear (Again in model co-ords)
+ArmLength 30
+LegLength 41
+//The scale multiplier for rendering the items and tools being held (1 will automatically scale with model)
+HeldItemScale 1
+//Recipe
+//Each section of the mecha may have many parts
+//The sections are core, leftArm, rightArm, hips, head
+AddRecipeParts core 14 Repair
+AddRecipeParts leftArm 2 Repair
+AddRecipeParts rightArm 2 Repair
+AddRecipeParts hips 3 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+SetupPart core 900 -30 0 -20 60 80 40
+SetupPart hips 300 -10 0 -14 20 54 28
+SetupPart rightArm 300 -7 69 -32 53 16 14
+SetupPart leftArm 300 -7 69 32 53 16 -14
+BulletDetection 7
+//Height and Width for world collision
+Height 80
+Width 30
+//Height of chassis above the ground
+ChassisHeight 12
+//The amount of damage the mecha should take from falling
+FallDamageMultiplier 1.0
+//Whether to actually take fall damage. Can be overriden by upgrades
+TakeFallDamage false
+//The size of explosion to create per distance fallen upon hitting the ground
+BlockDamageFromFalling 2.0
+//Whether to actually damage the ground. Can be overridden by upgrades
+DamageBlocksFromFalling false
+ModelScale 1
+LimitHeadTurn False
+LegSwingLimit 3
+UpperArmLimit 65
+
+Description Tier 4_Utility Vehicle
+IsExplosionWhenDestroyed true

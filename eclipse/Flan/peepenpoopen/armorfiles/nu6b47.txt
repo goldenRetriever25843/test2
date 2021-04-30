@@ -1,0 +1,19 @@
+Name 6b47 Helmet
+ShortName nu6b47
+ItemID 31257
+Icon 6b47
+Colour 255 255 255
+Type Helmet
+Defence 0.25
+ArmourTexture Skin6b47
+Model monolith.6b47
+Description test nvg shit here
+headArmor 30
+Durability 90
+
+hasFrontMount true
+frontMountY1 1
+frontMountZ1 1
+frontMountY2 1
+frontMountZ2 1
+frontMountRotation 69

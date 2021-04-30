@@ -1,0 +1,11 @@
+Name Veles Wolfskin
+ShortName wolfskin
+ItemID 31257
+Icon Velite
+Colour 255 255 255
+Type Helmet
+Defence 0.0
+MoveSpeedModifier 1.02
+ArmourTexture SkinVelite
+Model monolith.Velite
+Description Reserve_Roman Skirmisher Hat_Republican Period

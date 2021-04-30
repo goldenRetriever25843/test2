@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="Magic" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="magic"/>
+			<item value="magi"/>
+			<item value="speed"/>
+			<item value="tv"/>
+			<item value="guided"/>
+			<item value="passenger"/>
+			<item value="numpass"/>
+			<item value="seat"/>
+			<item value="wing"/>
+			<item value="underwing"/>
+			<item value="pupperino"/>
+			<item value="thirdpersonview"/>
+			<item value="originalth"/>
+			<item value="third"/>
+			<item value="client"/>
+		</list>
+		<list key="replacehistory">
+			<item value="renderDistanceWeight"/>
+			<item value="fancyGraphics"/>
+			<item value="getBlockById"/>
+			<item value="applyRenderColor"/>
+			<item value="getItemById"/>
+			<item value="setParticleTextureIndex"/>
+			<item value="slime_ball"/>
+			<item value="lava"/>
+			<item value="water"/>
+			<item value="snowball"/>
+			<item value="rand"/>
+			<item value="setBaseSpellTextureIndex"/>
+			<item value="setAlphaF"/>
+			<item value="nextTextureIndexX"/>
+			<item value="getBlueColorF"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="290" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="409" key="DIALOG_HEIGHT"/>
+		<item value="-127" key="DIALOG_X_ORIGIN"/>
+		<item value="176" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

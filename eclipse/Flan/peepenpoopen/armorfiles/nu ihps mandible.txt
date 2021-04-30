@@ -1,0 +1,12 @@
+Name Veiled Turban Helmet
+ShortName ihpsmandible
+ItemID 31257
+Icon turbanHelmet
+Colour 255 255 255
+Type Helmet
+Defence 0.25
+ArmourTexture SkinIHPSmandible
+Model monolith.IHPSmandible
+Description next gen helmet
+headArmor 30
+Durability 90

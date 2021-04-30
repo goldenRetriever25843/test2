@@ -1,0 +1,10 @@
+Name Norway
+ShortName norwayBody
+ItemID 31257
+Icon GermanFeldgrauCoat
+Colour 255 255 255
+Type Body
+Defence 0.0
+ArmourTexture SkinNorway
+Model NewAge.WW1NorwayBody
+ModelScale 1.0

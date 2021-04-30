@@ -1,0 +1,13 @@
+Name Arabe Helmet
+ShortName andalusHelm69
+ItemID 31257
+Icon ArabeHat
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+ArmourTexture SkinAndalusianHelmet
+Model monolith.AndalusNasalHelm
+Description Tier -3.5_Arab Helmet_Early Medieval Period
+
+headArmor 69
+Durability 750

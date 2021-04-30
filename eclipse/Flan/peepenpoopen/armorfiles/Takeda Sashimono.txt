@@ -1,0 +1,10 @@
+Name Takeda Clan Sashimono
+ShortName sashimonoTakeda
+ItemID 31257
+Icon TakedaSashimono
+Colour 255 255 255
+Type Boots
+Defence 0.0
+ArmourTexture SkinSashimonoTakeda
+Model monolith.Sashimono
+Description Reserve_Japanese Identification Banner_Takeda Clan Markings

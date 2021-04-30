@@ -1,0 +1,10 @@
+Name Modern Thot
+ShortName modernThot
+Icon Philip2icon
+Colour 255 255 255
+Type Body
+Defence 4
+Model monolith.ModernWoman
+ArmourTexture SkinModernWoman
+Description OwW
+playermodel true

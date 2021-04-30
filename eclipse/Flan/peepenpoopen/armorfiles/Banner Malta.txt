@@ -1,0 +1,9 @@
+Name Malta Banner
+ShortName Malta
+Icon MaltaIcon
+Colour 255 255 255
+Type Boots
+Defence 0
+Model NewAge.CrusadeBanner
+ArmourTexture BannerMalta
+Description Reserve_Malta Identification Banner

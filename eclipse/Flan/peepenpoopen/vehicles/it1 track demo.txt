@@ -1,0 +1,130 @@
+//Naming
+Name Type 61
+ShortName it1Track
+//Visuals
+Icon KruppGun
+Model mw.IT1
+Texture None
+ModelScale 1.0
+
+//Third Person Camera Distance
+CameraDistance 7.5
+//Throttle
+MaxThrottle 1.2
+MaxNegativeThrottle 0.3
+//Steering modifiers
+TurnLeftSpeed 0.3
+TurnRightSpeed 0.3
+//Drag
+Drag 10.0
+//For calculating whether wheels are on the ground or not for driving
+WheelRadius 1.5
+//Wheel positions for collision handling. Tanks still have 4 wheels, they are just the corner ones.
+NumWheels 4
+WheelPosition 0 -48 -12 -32
+WheelPosition 1 -48 -12 32
+WheelPosition 2 36 -12 32
+WheelPosition 3 36 -12 -32
+WheelSpringStrength 0.5
+//If true, then all wheels will apply drive forces
+FourWheelDrive true
+//Tank mode activate
+Tank true
+//Fuel Tank Size (1 point of fuel will keep one propeller going with throttle at 1 for 1 tick)
+FuelTankSize 2000
+//Inventory Slots
+CargoSlots 0
+ShellSlots 1
+//Driver and passenger positions
+Driver 0 29 0 -360 360 -10 30
+RotatedDriverOffset -11 0 8
+Passengers 0
+Passengers 0
+ShootPointPrimary 22 27 2 turret akmTest
+ShootPointPrimary 25 29 -5 turret akmTest
+//Secondary gun
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 10
+ShellDelay 10
+PlaceTimePrimary 10
+PlaceTimeSecondary 10
+
+PlaceTimePrimary 10
+PlaceTimeSecondary 10
+
+AllowAllAmmo false
+AddAmmo KruppPenTest
+AddAmmo KruppPenTestDecay
+AddAmmo KruppPenTest300
+AddAmmo KruppPenTest95
+AddAmmo KruppPenTest1000
+AddAmmo KruppPenTest300Decay
+AddAmmo KruppPenTest300HEAT
+
+BulletSpeed 1
+BulletSpread 0
+
+//Sounds
+StartSound ATGun_movement
+StartSoundLength 30
+EngineSound ATGun_movement
+EngineSoundLength 30
+ShootSoundPrimary None
+ShootSoundSecondary None
+//Recipe
+//Each section of the plane may have many parts
+//The sections are tailWheel, tail, bay, topWing, leftWingWheel, leftWing, rightWingWheel,
+//rightWing, nose, turret, coreWheel, core
+AddRecipeParts core 1 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+BulletDetection 5
+RotateWheels true
+canDabOnEntity true
+
+SetupPart core 100 -50 -2 -9 42 20 18
+SetupPart frontalArmor 100 -8 -2 -18 67 21 36
+SetupPart engine 100 -61 3 -20 40 16 40
+SetupPart leftTrack 100 -58 -10 -28 102 25 21
+SetupPart rightTrack 100 -58 -10 9 102 25 21
+SetupPart turret 100 -22 19 -19 14 17 40
+SetupPart turretarmor 100 -8 19 -20 60 19 42
+SetupPart weakTrt 20 -45 25 -15 22 9 32
+SetupPart weakSpot2 20 -20 -1 -20 30 5 40
+
+IT1 true
+Description russian anime track atgm carrier
+
+WeakspotCookTime 4
+
+
+
+RightLinkPoint [-45,6,-23]
+RightLinkPoint [-25,3,-23]
+RightLinkPoint [15,3,-23]
+RightLinkPoint [38,7,-23]
+RightLinkPoint [42,7,-23]
+RightLinkPoint [44,5,-23]
+RightLinkPoint [44,1,-23]
+RightLinkPoint [41.5,-1,-23]
+RightLinkPoint [27,-9,-23]
+RightLinkPoint [-37,-9,-23]
+RightLinkPoint [-49,-2,-23]
+RightLinkPoint [-51,0,-23]
+RightLinkPoint [-51,4,-23]
+RightLinkPoint [-49,6,-23]
+LeftLinkPoint [-45,6,23]
+LeftLinkPoint [-25,3,23]
+LeftLinkPoint [15,3,23]
+LeftLinkPoint [38,7,23]
+LeftLinkPoint [42,7,23]
+LeftLinkPoint [44,5,23]
+LeftLinkPoint [44,1,23]
+LeftLinkPoint [41.5,-1,23]
+LeftLinkPoint [27,-9,23]
+LeftLinkPoint [-37,-9,23]
+LeftLinkPoint [-49,-2,23]
+LeftLinkPoint [-51,0,23]
+LeftLinkPoint [-51,4,23]
+LeftLinkPoint [-49,6,23]
+TrackLinkLength 3

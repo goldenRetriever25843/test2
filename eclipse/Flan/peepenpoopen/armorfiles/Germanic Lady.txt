@@ -1,0 +1,10 @@
+Name Ancient Thot
+ShortName germanicLady
+Icon Philip2icon
+Colour 255 255 255
+Type Body
+Defence 4
+Model monolith.GermanicLady
+ArmourTexture SkinGermanicLady
+Description OwW
+playermodel true

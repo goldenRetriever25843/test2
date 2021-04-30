@@ -1,0 +1,14 @@
+Name Oda Ashigaru Armor
+ShortName AshigaruOda
+ItemID 31257
+Icon Ashigaru
+Colour 255 255 255
+Type Body
+Defence 0.35
+KnockbackModifier 0.5
+MoveSpeedModifier 0.9
+ArmourTexture OdaAshigaru
+Model monolith.AshigaruArmor
+Description Tier -2.5_Japanese Infantry Armor_Sengoku Period
+bodyArmor 35
+Durability 175

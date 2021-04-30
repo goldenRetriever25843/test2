@@ -1,0 +1,13 @@
+Name Sumerian Helmet
+ShortName sumerHelm
+ItemID 31257
+Icon Coolus
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+ArmourTexture SkinSumerHelm
+Model monolith.SumerHelmet
+Description Tier -4_Celtic Bronze Helmet_Early Republican Period
+headArmor 9000
+faceArmor 20
+Durability 35

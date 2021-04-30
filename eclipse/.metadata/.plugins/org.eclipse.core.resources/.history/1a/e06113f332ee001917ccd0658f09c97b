@@ -1,0 +1,252 @@
+//Naming
+Name Modern Kongo
+ShortName kongoObj
+//Visuals
+Icon KruppGun
+Model monolith.ObjKongo
+Texture kongoskin
+ModelScale 1
+
+//Third Person Camera Distance
+CameraDistance 20.5
+//Throttle
+MaxThrottle 0.1
+MaxNegativeThrottle 0.1
+//Steering modifiers
+TurnLeftSpeed 0.2
+TurnRightSpeed 0.2
+//Drag
+Drag 10.0
+//For calculating whether wheels are on the ground or not for driving
+WheelRadius 1.5
+//Wheel positions for collision handling. Tanks still have 4 wheels, they are just the corner ones.
+NumWheels 4
+WheelPosition 0 -58 -19 -32
+WheelPosition 1 -58 -19 32
+WheelPosition 2 46 -19 32
+WheelPosition 3 46 -19 -32
+WheelSpringStrength 0.5
+//If true, then all wheels will apply drive forces
+FourWheelDrive true
+//Tank mode activate
+Tank true
+//Fuel Tank Size (1 point of fuel will keep one propeller going with throttle at 1 for 1 tick)
+FuelTankSize 2000
+//Inventory Slots
+CargoSlots 0
+ShellSlots 1
+//Driver and passenger positions
+Driver 29 104 0 -360 360 -80 80
+Passengers 6
+Passenger 1 -21 44 -29 core
+Passenger 2 -43 44 -29 core
+Passenger 3 -64 44 -29 core
+Passenger 4 -21 44 29 core
+Passenger 5 -43 44 29 core
+Passenger 6 -64 44 29 core
+BarrelPosition 0 10 0 40 0 0
+//Secondary gun
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 10
+ShellDelay 10
+PlaceTimePrimary 10
+PlaceTimeSecondary 10
+
+AllowAllAmmo false
+AddAmmo KruppShot
+AddAmmo KruppShotCIWS
+AddAmmo MediumCanister
+
+BulletSpeed 1
+BulletSpread 2
+
+//Sounds
+StartSound ATGun_movement
+StartSoundLength 30
+EngineSound ATGun_movement
+EngineSoundLength 30
+ShootSoundPrimary 4832_HeavyTank_TigerIIFire
+ShootSoundSecondary 4832_HeavyTank_TigerIIFire
+//Recipe
+//Each section of the plane may have many parts
+//The sections are tailWheel, tail, bay, topWing, leftWingWheel, leftWing, rightWingWheel,
+//rightWing, nose, turret, coreWheel, core
+AddRecipeParts core 1 Repair
+AddRecipeParts bow 1 Repair
+AddRecipeParts stern 1 Repair
+AddRecipeParts midsection 1 Repair
+AddRecipeParts steering 1 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+SetupPart core 300 -5 -2 -2 4 4 4
+SetupPart bow 100 30 -4 -25 250 16 50
+SetupPart stern 100 -280 -4 -25 250 16 50
+SetupPart midsection 100 -30 -4 -25 60 16 50
+SetupPart steering 100 -270 -8 -15 40 8 30
+fancySinking true
+MaxDepth 10
+BulletDetection 3
+RotateWheels True
+canDabOnEntity true
+ShootParticlesPrimary smokeShell 0 0 0
+ShootParticlesPrimary largeexplode 5 0 0
+ShootParticlesPrimary hugeexplosion 7 0 0
+ShootParticlesPrimary explode 4 0 0
+ShootParticlesPrimary explode 4 0 0
+ShootParticlesPrimary explode 4 0 0
+ShootParticlesPrimary explode 4 0 0
+ShootParticlesPrimary explode 4 0 0
+ShootParticlesPrimary explode 4 1 0
+ShootParticlesPrimary explode 4 1 0
+ShootParticlesPrimary explode 4 1 0
+ShootParticlesPrimary explode 4 1 0
+ShootParticlesPrimary explode 4 1 0
+ShootParticlesPrimary explode 4 -1 0
+ShootParticlesPrimary explode 4 -1 0
+ShootParticlesPrimary explode 4 -1 0
+ShootParticlesPrimary explode 4 -1 0
+ShootParticlesPrimary explode 4 -1 0
+ShootParticlesPrimary explode 4 0 1
+ShootParticlesPrimary explode 4 0 1
+ShootParticlesPrimary explode 4 0 1
+ShootParticlesPrimary explode 4 0 1
+ShootParticlesPrimary explode 4 0 1
+ShootParticlesPrimary explode 4 0 -1
+ShootParticlesPrimary explode 4 0 -1
+ShootParticlesPrimary explode 4 0 -1
+ShootParticlesPrimary explode 4 0 -1
+ShootParticlesPrimary explode 4 0 -1
+ShootParticlesPrimary explode 5 0 0
+ShootParticlesPrimary explode 5 0 0
+ShootParticlesPrimary explode 5 0 0
+ShootParticlesPrimary explode 5 0 0
+ShootParticlesPrimary explode 5 0 0
+ShootParticlesPrimary explode 5 1 0
+ShootParticlesPrimary explode 5 1 0
+ShootParticlesPrimary explode 5 1 0
+ShootParticlesPrimary explode 5 1 0
+ShootParticlesPrimary explode 5 1 0
+ShootParticlesPrimary explode 5 1 1
+ShootParticlesPrimary explode 5 1 1
+ShootParticlesPrimary explode 5 1 1
+ShootParticlesPrimary explode 5 1 1
+ShootParticlesPrimary explode 5 1 1
+ShootParticlesPrimary explode 5 1 -1
+ShootParticlesPrimary explode 5 1 -1
+ShootParticlesPrimary explode 5 1 -1
+ShootParticlesPrimary explode 5 1 -1
+ShootParticlesPrimary explode 5 1 -1
+ShootParticlesPrimary explode 5 -1 0
+ShootParticlesPrimary explode 5 -1 0
+ShootParticlesPrimary explode 5 -1 0
+ShootParticlesPrimary explode 5 -1 0
+ShootParticlesPrimary explode 5 -1 0
+ShootParticlesPrimary explode 5 -1 -1
+ShootParticlesPrimary explode 5 -1 -1
+ShootParticlesPrimary explode 5 -1 -1
+ShootParticlesPrimary explode 5 -1 -1
+ShootParticlesPrimary explode 5 -1 -1
+ShootParticlesPrimary explode 5 -1 1
+ShootParticlesPrimary explode 5 -1 1
+ShootParticlesPrimary explode 5 -1 1
+ShootParticlesPrimary explode 5 -1 1
+ShootParticlesPrimary explode 5 -1 1
+ShootParticlesPrimary explode 5 0 1
+ShootParticlesPrimary explode 5 0 1
+ShootParticlesPrimary explode 5 0 1
+ShootParticlesPrimary explode 5 0 1
+ShootParticlesPrimary explode 5 0 1
+ShootParticlesPrimary explode 5 0 -1
+ShootParticlesPrimary explode 5 0 -1
+ShootParticlesPrimary explode 5 0 -1
+ShootParticlesPrimary explode 5 0 -1
+ShootParticlesPrimary explode 5 0 -1
+ShootParticlesPrimary cloud 4 0 0
+ShootParticlesPrimary cloud 4 0 0
+ShootParticlesPrimary cloud 4 0 0
+ShootParticlesPrimary cloud 4 0 0
+ShootParticlesPrimary cloud 4 0 0
+ShootParticlesPrimary cloud 4 1 0
+ShootParticlesPrimary cloud 4 1 0
+ShootParticlesPrimary cloud 4 1 0
+ShootParticlesPrimary cloud 4 1 0
+ShootParticlesPrimary cloud 4 1 0
+ShootParticlesPrimary cloud 4 -1 0
+ShootParticlesPrimary cloud 4 -1 0
+ShootParticlesPrimary cloud 4 -1 0
+ShootParticlesPrimary cloud 4 -1 0
+ShootParticlesPrimary cloud 4 -1 0
+ShootParticlesPrimary cloud 4 0 1
+ShootParticlesPrimary cloud 4 0 1
+ShootParticlesPrimary cloud 4 0 1
+ShootParticlesPrimary cloud 4 0 1
+ShootParticlesPrimary cloud 4 0 1
+ShootParticlesPrimary cloud 4 0 -1
+ShootParticlesPrimary cloud 4 0 -1
+ShootParticlesPrimary cloud 4 0 -1
+ShootParticlesPrimary cloud 4 0 -1
+ShootParticlesPrimary cloud 4 0 -1
+ShootParticlesPrimary cloud 5 0 0
+ShootParticlesPrimary cloud 5 0 0
+ShootParticlesPrimary cloud 5 0 0
+ShootParticlesPrimary cloud 5 0 0
+ShootParticlesPrimary cloud 5 0 0
+ShootParticlesPrimary cloud 5 1 0
+ShootParticlesPrimary cloud 5 1 0
+ShootParticlesPrimary cloud 5 1 0
+ShootParticlesPrimary cloud 5 1 0
+ShootParticlesPrimary cloud 5 1 0
+ShootParticlesPrimary cloud 5 1 1
+ShootParticlesPrimary cloud 5 1 1
+ShootParticlesPrimary cloud 5 1 1
+ShootParticlesPrimary cloud 5 1 1
+ShootParticlesPrimary cloud 5 1 1
+ShootParticlesPrimary cloud 5 1 -1
+ShootParticlesPrimary cloud 5 1 -1
+ShootParticlesPrimary cloud 5 1 -1
+ShootParticlesPrimary cloud 5 1 -1
+ShootParticlesPrimary cloud 5 1 -1
+ShootParticlesPrimary cloud 5 -1 0
+ShootParticlesPrimary cloud 5 -1 0
+ShootParticlesPrimary cloud 5 -1 0
+ShootParticlesPrimary cloud 5 -1 0
+ShootParticlesPrimary cloud 5 -1 0
+ShootParticlesPrimary cloud 5 -1 -1
+ShootParticlesPrimary cloud 5 -1 -1
+ShootParticlesPrimary cloud 5 -1 -1
+ShootParticlesPrimary cloud 5 -1 -1
+ShootParticlesPrimary cloud 5 -1 -1
+ShootParticlesPrimary cloud 5 -1 1
+ShootParticlesPrimary cloud 5 -1 1
+ShootParticlesPrimary cloud 5 -1 1
+ShootParticlesPrimary cloud 5 -1 1
+ShootParticlesPrimary cloud 5 -1 1
+ShootParticlesPrimary cloud 5 0 1
+ShootParticlesPrimary cloud 5 0 1
+ShootParticlesPrimary cloud 5 0 1
+ShootParticlesPrimary cloud 5 0 1
+ShootParticlesPrimary cloud 5 0 1
+ShootParticlesPrimary cloud 5 0 -1
+ShootParticlesPrimary cloud 5 0 -1
+ShootParticlesPrimary cloud 5 0 -1
+ShootParticlesPrimary cloud 5 0 -1
+ShootParticlesPrimary cloud 5 0 -1
+
+hasScope true
+Gunsight Cataphract
+gunsightZoom 3.5
+nightScope true
+
+invisiblePassenger 1 true
+heliGuiSeat 1 true
+heliGUI Cataphract
+passengerZoom 1 5
+
+Description Tier -1_German Breech-Loaded Steel Cannon_19th Century
+canDabOnEntity true
+Boat
+PlaceableOnLand False
+PlaceableOnWater True
+FloatOnWater True
+WheelStepHeight 0.5
+Buoyancy 0.08

@@ -1,0 +1,74 @@
+//Naming
+Name Arachnid Warrior
+ShortName Arachnid
+ItemID 7462
+//Visuals
+Icon WarriorBug
+Model monolith.Arachnid
+ModelScale 0.6
+Texture SkinArachnidSoldier
+//Third Person Camera Distance
+CameraDistance 8.5
+//Driver and passenger positions
+Driver 0 35 0 -60 60 -85 45
+Passengers 0
+RotatedDriverOffset 5 0 0
+//Offset of driver from the point of rotation
+//Speed Modifier, 1 is player speed
+MoveSpeed 1.5
+//YOffset
+YOffset 0
+//Fuel Tank Size
+FuelTankSize 1000
+//Inventory Slots
+CargoSlots 8
+//How quickly the legs react to a change in direction
+RotateSpeed 8
+//Will it squash puny mobs?
+SquashMobs true
+//Step Height (Integer) and Jump Height (Float)
+StepHeight 3
+JumpHeight 7
+//Arm origins used to rotate arm models and calculate position of held item / tool (positions in model co-ordinates)
+LeftArmOrigin 12 41 0
+RightArmOrigin 9 44 0
+//Arm lengths used to determine where the held items appear (Again in model co-ords)
+ArmLength 19
+LegLength 29
+//The scale multiplier for rendering the items and tools being held (1 will automatically scale with model)
+HeldItemScale 0.001
+//Recipe
+//Each section of the mecha may have many parts
+//The sections are core, leftArm, rightArm, hips, head
+AddRecipeParts core 12 beefRaw
+AddRecipeParts leftArm 2 beefRaw
+AddRecipeParts rightArm 2 beefRaw
+AddRecipeParts hips 8 beefRaw
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+SetupPart core 100 -30 0 -20 60 80 40
+SetupPart hips 60 -10 0 -14 20 54 28
+SetupPart rightArm 45 -7 69 -32 53 16 14
+SetupPart leftArm 45 -7 69 32 53 16 -14
+BulletDetection 7
+//Height and Width for world collision
+Height 10
+Width 5
+//Height of chassis above the ground
+ChassisHeight 12
+//The amount of damage the mecha should take from falling
+FallDamageMultiplier 1.0
+//Whether to actually take fall damage. Can be overriden by upgrades
+TakeFallDamage false
+//The size of explosion to create per distance fallen upon hitting the ground
+BlockDamageFromFalling 0
+//Whether to actually damage the ground. Can be overridden by upgrades
+DamageBlocksFromFalling false
+LegSwingLimit 4
+UpperArmLimit 45
+LowerArmLimit 20
+LimitHeadTurn True 50
+
+
+Description Tier ?_Arachnid Infantry
+IsExplosionWhenDestroyed false

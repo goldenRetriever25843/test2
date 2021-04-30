@@ -1,0 +1,12 @@
+Name Super Morion
+ShortName kettlehelmelite
+ItemID 31257
+Icon Morion
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+ArmourTexture SkinSuperKettleHelm
+Model monolith.superKettleHelm
+Description Tier -2_Spanish Light Helmet_Renaissance
+headArmor 30
+Durability 100

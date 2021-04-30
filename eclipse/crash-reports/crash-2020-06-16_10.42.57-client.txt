@@ -1,0 +1,123 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 6/16/20 10:42 AM
+Description: Ticking entity
+
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.flansmod.common.guns.ItemGun.onUpdate(ItemGun.java:1883)
+	at net.minecraft.item.ItemStack.updateAnimation(ItemStack.java:476)
+	at net.minecraft.entity.player.InventoryPlayer.decrementAnimations(InventoryPlayer.java:347)
+	at net.minecraft.entity.player.EntityPlayer.onLivingUpdate(EntityPlayer.java:610)
+	at net.minecraft.client.entity.EntityPlayerSP.onLivingUpdate(EntityPlayerSP.java:299)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:1816)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:327)
+	at net.minecraft.client.entity.EntityClientPlayerMP.onUpdate(EntityClientPlayerMP.java:96)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2298)
+	at net.minecraft.world.World.updateEntity(World.java:2258)
+	at net.minecraft.world.World.updateEntities(World.java:2108)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2097)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.flansmod.common.guns.ItemGun.onUpdate(ItemGun.java:1883)
+	at net.minecraft.item.ItemStack.updateAnimation(ItemStack.java:476)
+	at net.minecraft.entity.player.InventoryPlayer.decrementAnimations(InventoryPlayer.java:347)
+	at net.minecraft.entity.player.EntityPlayer.onLivingUpdate(EntityPlayer.java:610)
+	at net.minecraft.client.entity.EntityPlayerSP.onLivingUpdate(EntityPlayerSP.java:299)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:1816)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:327)
+	at net.minecraft.client.entity.EntityClientPlayerMP.onUpdate(EntityClientPlayerMP.java:96)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2298)
+	at net.minecraft.world.World.updateEntity(World.java:2258)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityClientPlayerMP)
+	Entity ID: 207
+	Entity Name: Player491
+	Entity's Exact location: 19535.48, 5.62, 6659.24
+	Entity's Block location: World: (19535,5,6659), Chunk: (at 15,0,3 in 1220,416; contains blocks 19520,0,6656 to 19535,255,6671), Region: (38,13; contains chunks 1216,416 to 1247,447, blocks 19456,0,6656 to 19967,255,7167)
+	Entity's Momentum: 0.00, -0.08, 0.00
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:2108)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player491'/207, l='MpServer', x=19535.48, y=5.62, z=6659.24]]
+	Chunk stats: MultiplayerChunkCache: 441, 441
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (297,4,326), Chunk: (at 9,0,6 in 18,20; contains blocks 288,0,320 to 303,255,335), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 186416 game time, 8000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 36 total; [EntityVillager['Villager'/192, l='MpServer', x=19492.69, y=4.00, z=6672.00], EntityVillager['Villager'/193, l='MpServer', x=19489.69, y=5.00, z=6667.31], EntityVillager['Villager'/194, l='MpServer', x=19502.25, y=4.00, z=6661.50], EntityVillager['Villager'/195, l='MpServer', x=19497.22, y=5.00, z=6668.50], EntityVillager['Villager'/196, l='MpServer', x=19501.50, y=4.00, z=6665.75], EntityVillager['Villager'/197, l='MpServer', x=19487.16, y=4.00, z=6686.56], EntityCamera['unknown'/390, l='MpServer', x=19544.04, y=4.63, z=6661.41], EntityVillager['Villager'/198, l='MpServer', x=19487.84, y=4.00, z=6687.59], EntityVillager['Villager'/199, l='MpServer', x=19492.69, y=4.00, z=6676.28], EntityVillager['Villager'/200, l='MpServer', x=19494.31, y=4.00, z=6676.66], EntityVillager['Villager'/201, l='MpServer', x=19488.47, y=6.00, z=6672.06], EntityCamera['unknown'/398, l='MpServer', x=19549.72, y=4.75, z=6674.90], EntityClientPlayerMP['Player491'/207, l='MpServer', x=19535.48, y=5.62, z=6659.24], EntityVehicle['Panhard 178'/211, l='MpServer', x=19544.04, y=4.63, z=6661.41], EntityBat['Bat'/219, l='MpServer', x=19550.34, y=8.60, z=6650.75], EntityVillager['Villager'/220, l='MpServer', x=19500.50, y=5.00, z=6681.78], EntitySeat['entity.Seat.name'/412, l='MpServer', x=19543.26, y=6.39, z=6661.94], EntityVillager['Villager'/221, l='MpServer', x=19513.63, y=4.00, z=6676.31], EntityWheel['entity.Wheel.name'/413, l='MpServer', x=19540.76, y=3.00, z=6660.31], EntityVehicle['T95'/223, l='MpServer', x=19549.72, y=4.75, z=6674.90], EntityWheel['entity.Wheel.name'/415, l='MpServer', x=19541.75, y=3.35, z=6664.16], EntityWheel['entity.Wheel.name'/416, l='MpServer', x=19546.79, y=4.00, z=6662.81], EntityWheel['entity.Wheel.name'/417, l='MpServer', x=19545.80, y=3.54, z=6658.95], EntityVillager['Villager'/232, l='MpServer', x=19479.66, y=4.00, z=6664.31], EntityVillager['Villager'/233, l='MpServer', x=19487.06, y=5.50, z=6668.50], EntitySeat['entity.Seat.name'/425, l='MpServer', x=19550.44, y=6.56, z=6674.46], EntityVillager['Villager'/234, l='MpServer', x=19485.75, y=4.00, z=6660.72], EntityWheel['entity.Wheel.name'/426, l='MpServer', x=19552.53, y=4.00, z=6677.16], EntityBat['Bat'/235, l='MpServer', x=19496.63, y=10.04, z=6735.16], EntityWheel['entity.Wheel.name'/428, l='MpServer', x=19552.88, y=4.00, z=6673.17], EntityWheel['entity.Wheel.name'/429, l='MpServer', x=19547.65, y=4.00, z=6672.71], EntityWheel['entity.Wheel.name'/431, l='MpServer', x=19547.30, y=4.00, z=6676.69], EntityVillager['Villager'/188, l='MpServer', x=19505.53, y=5.50, z=6666.94], EntityVillager['Villager'/189, l='MpServer', x=19497.59, y=4.00, z=6656.69], EntityVillager['Villager'/190, l='MpServer', x=19492.50, y=4.00, z=6657.00], EntityVillager['Villager'/191, l='MpServer', x=19501.31, y=4.00, z=6660.50]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:984)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Mac OS X (x86_64) version 10.15.4
+	Java Version: 1.8.0_181, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 702104944 bytes (669 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1558 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1558} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	flansmod{LabJac Mod Mark 25843 - April 2020} [Flan's Mod] (bin) 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '2.1 ATI-3.8.24' Renderer: 'AMD Radeon Pro 575 OpenGL Engine'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon Pro 575 OpenGL Engine GL version 2.1 ATI-3.8.24, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because ARB_framebuffer_object is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

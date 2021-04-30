@@ -1,0 +1,14 @@
+Name Sallet (open)
+ShortName Shelom
+ItemID 31257
+Icon Sallet
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+ArmourTexture SkinShelom
+Model monolith.Shelom
+
+Description Russian Spired Helmet
+ShapelessRecipe sallet
+headArmor 30
+Durability 100

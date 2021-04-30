@@ -1,0 +1,10 @@
+Name Persian Thot
+ShortName qajarCourtier
+Icon Philip2icon
+Colour 255 255 255
+Type Body
+Defence 4
+Model monolith.QajarCourtier
+ArmourTexture SkinQajarCourtier
+Description OwW
+playermodel true

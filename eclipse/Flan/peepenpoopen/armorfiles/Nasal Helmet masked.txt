@@ -1,0 +1,13 @@
+Name Nasal Helmet
+ShortName nasalHelmMasked
+ItemID 31257
+Icon NasalHelm
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+ArmourTexture SkinFinalNasalHelm
+Model monolith.FinalNasalHelm
+Description Tier -3_Norman Helmet_High Medieval Period
+headArmor 25
+faceArmor 20
+Durability 100

@@ -1,0 +1,10 @@
+Name Jaguar Helmet
+ShortName snailhelm
+ItemID 31257
+Icon RomeHelmet
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+ArmourTexture SkinSnailHelm
+Model monolith.SnailHelm
+Description Tier -3.5_Aztec Helmet

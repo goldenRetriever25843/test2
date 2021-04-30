@@ -1,0 +1,10 @@
+Name Ancient Thot
+ShortName celtLady
+Icon Philip2icon
+Colour 255 255 255
+Type Body
+Defence 4
+Model monolith.PictishLady
+ArmourTexture SkinPictishLady
+Description OwW
+playermodel true

@@ -1,0 +1,10 @@
+Name Ancient Thot
+ShortName tangLady
+Icon Philip2icon
+Colour 255 255 255
+Type Body
+Defence 4
+Model monolith.TangLady
+ArmourTexture SkinTangLady
+Description OwW
+playermodel true

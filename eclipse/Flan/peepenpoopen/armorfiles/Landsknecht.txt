@@ -1,0 +1,10 @@
+Name Landknecht Hat
+ShortName landsknecht
+ItemID 31257
+Icon RomeHelmet
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+ArmourTexture SkinLandsknecht
+Model monolith.Landsknecht
+Description Tier -2_German Fancy Hat

@@ -1,0 +1,15 @@
+Name Bascinet (open)
+ShortName bascinetOpen
+ItemID 31257
+Icon Bascinet
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+ArmourTexture SkinBascinet
+Model monolith.BascinetOpen
+
+Description Tier -3_European Helmet_Late Medieval Period_Has Visor_(Open)
+ShapelessRecipe bascinet
+MoveSpeedModifier 0.95
+headArmor 30
+Durability 100

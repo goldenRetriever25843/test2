@@ -1,0 +1,69 @@
+Name Nuclear gas
+ShortName artilleryUniversalisNuclear
+Model monolith.Plumbatae
+Texture SkinPlumbatae
+//Colour of icon and model
+Colour 255 255 255
+Icon Shell
+//How affected by gravity the bullet is
+FallSpeed 0.6
+//The number of rounds each item has. Limited to 32000.
+RoundsPerItem 1
+//The maximum stack size of a stack of these
+MaxStackSize 12
+//The damage multiplier caused by the bullet on hitting an entity
+DamageVsVehicles 1
+//Size of explosion caused
+//Explosion 1
+//ExplosionRadius 1
+ExplosionBreaksBlocks true
+
+classicExplosionRadius 0
+
+//True if bullet explodes on hitting anything. Fuse denotes the maximum time it may spend in the air before detonating
+ExplodeOnImpact False
+Fuse 220
+FlakParticles 3
+FlakParticleType nuclear
+//Amount of fire to spread on exploding; for each increment, it will increase the dimensions of the burning area by 2. i.e. 1 will burn a 3x3 square, 2 will burn a 5x5 square
+Fire 0
+BreaksGlass false
+//Size of box to check for entities to hit / detonate
+HitBoxSize 0.1
+HitSound YamatoGun
+HitSoundRange 500
+HitSoundEnable true
+EntityHitSoundEnable true
+//Whether or not the bullet can travel through an entity having hit it
+Penetrates True
+SmokeTrail False
+LockOnToDriveables False
+LockOnToPlayers False
+LockOnToLivings False
+MaxLockOnAngle 0.0
+//True if this is a bomb
+Bomb False
+Shell True
+Description 25 damage 100 pen no decay
+
+FlareParticleCount 2
+DebrisParticleCount 2
+
+HasLight True
+
+
+armorPen 100
+
+
+stolenSmoke true
+SmokeRadius 69
+gasmaskable false
+smokeParticleType nuclear
+smokeParticleCount 1
+angelOfDeath true
+stolenSmokeEffect 20 100 9
+stolenSmokeEffect 19 9000 5
+stolenSmokeEffect 7 100 100
+bulletSmokeTime 100
+Bouncy true
+smokeDelay 210

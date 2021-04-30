@@ -1,0 +1,18 @@
+Name Juggernaut Suit
+ShortName juggsuit
+ItemID 31257
+Icon iconjuggsuit
+Colour 255 255 255
+Type Body
+Defence 0.6
+KnockbackModifier 0.6
+MoveSpeedModifier 0.4
+blast_protection 0.55
+hunger true
+ModelScale 1.05
+ArmourTexture skinjuggernautsuit
+Model CowPack.juggsuit
+Description Tier 4_Heavy Duty Armor Piece
+bodyArmor 15
+armArmor 15
+Durability 300

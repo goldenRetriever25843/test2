@@ -1,0 +1,13 @@
+Name Budenovka Hat
+ShortName budenovka
+ItemID 31257
+Icon ArabeHat
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+ArmourTexture SkinBudenovka
+Model monolith.Budenovka
+Description Russian Hat_Co-opted by b*lsheviks
+
+headArmor 25
+Durability 75

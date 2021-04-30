@@ -1,0 +1,98 @@
+//Naming
+Name Charmond Low Poly
+ShortName charmondLowPoly
+//Visuals
+Icon tachanka
+Model NewAge.LowPolyCharmond
+Texture SkinLowPolyCharmond
+ModelScale 1.0
+
+//Third Person Camera Distance
+CameraDistance 7.5
+//Throttle
+MaxThrottle 0.9
+MaxNegativeThrottle 0.3
+//Steering modifiers
+TurnLeftSpeed 0.4
+TurnRightSpeed 0.4
+//Drag
+Drag 10.0
+//For calculating whether wheels are on the ground or not for driving
+WheelRadius 1.5
+//Wheel positions for collision handling. Tanks still have 4 wheels, they are just the corner ones.
+NumWheels 4
+WheelPosition 0 -28 -9 -22
+WheelPosition 1 -28 -9 22
+WheelPosition 2 26 -9 22
+WheelPosition 3 26 -9 -22
+WheelSpringStrength 0.5
+//If true, then all wheels will apply drive forces
+FourWheelDrive true
+//Tank mode activate
+Tank true
+//Fuel Tank Size (1 point of fuel will keep one propeller going with throttle at 1 for 1 tick)
+FuelTankSize 2000
+//Inventory Slots
+CargoSlots 0
+ShellSlots 1
+//Driver and passenger positions
+Driver -14 9 0 -360 360 -15 80
+RotatedDriverOffset 0 0 0
+Passengers 1
+Passenger 1 -25 7 0 core 80 280 -8 30 akmTest PassengerGun1
+GunOrigin 1 -43 -15 0
+
+BarrelPosition 0 10 0 0 0 0
+//Secondary gun
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 100
+ShellDelay 100
+PlaceTimePrimary 100
+PlaceTimeSecondary 100
+
+PlaceTimePrimary 100
+PlaceTimeSecondary 100
+
+AllowAllAmmo false
+AddAmmo KruppPenTest
+AddAmmo KruppPenTestDecay
+AddAmmo KruppPenTest300
+AddAmmo KruppPenTest95
+AddAmmo KruppPenTest1000
+AddAmmo KruppPenTest300Decay
+AddAmmo KruppPenTest300HEAT
+AddAmmo Bouncy
+
+BulletSpeed 1
+BulletSpread 0
+
+//Sounds
+StartSound ATGun_movement
+StartSoundLength 30
+EngineSound ATGun_movement
+EngineSoundLength 30
+ShootSoundPrimary None
+ShootSoundSecondary None
+//Recipe
+//Each section of the plane may have many parts
+//The sections are tailWheel, tail, bay, topWing, leftWingWheel, leftWing, rightWingWheel,
+//rightWing, nose, turret, coreWheel, core
+AddRecipeParts core 1 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+SetupPart core 100 -20 -4 -25 40 16 50
+BulletDetection 3
+RotateWheels true
+canDabOnEntity true
+
+CollisionDamageEnable true
+CollisionDamageThrottle 0.21
+CollisionDamageTimes 100
+
+
+Description Tier -1_German Breech-Loaded Steel Cannon_19th Century
+
+BulletSpeed 2.5
+exitTimer 1
+
+artilleryCalculator true

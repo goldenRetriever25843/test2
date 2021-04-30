@@ -1,0 +1,12 @@
+Name Civic Crown
+ShortName romancrown
+ItemID 31257
+Icon NasalHelm
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+ArmourTexture SkinRomanCrown
+Model monolith.RomanCrown
+Description Tier -3_Anglo Helmet_Dark Ages
+headArmor 25
+Durability 100

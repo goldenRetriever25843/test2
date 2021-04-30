@@ -1,0 +1,12 @@
+Name White Padded Armor
+ShortName peasantTunic
+ItemID 31257
+Icon GambesonWhite
+Colour 255 255 255
+Type Body
+Defence 0.15
+ArmourTexture SkinPeasantTunic
+Model monolith.PeasantTunic
+Description Reserve_Basic Padded Armor_Linen Silk or Wool Light Armor
+bodyArmor 5
+Durability 150

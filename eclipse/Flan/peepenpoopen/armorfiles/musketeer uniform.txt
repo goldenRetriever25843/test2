@@ -1,0 +1,14 @@
+Name Korean Light Armor
+ShortName musketeerUniform
+ItemID 31257
+Icon HanLight
+Colour 255 255 255
+Type Body
+Defence 0.2
+KnockbackModifier 0.5
+MoveSpeedModifier 0.99
+ArmourTexture SkinMusketeer
+Model monolith.Musketeer
+Description Tier -4_Korean Armor_Joseon Dynasty
+bodyArmor 20
+Durability 100

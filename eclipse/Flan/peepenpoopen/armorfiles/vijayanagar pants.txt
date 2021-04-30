@@ -1,0 +1,16 @@
+Name Indian Pants
+ShortName southIndiaPants
+ItemID 31257
+Icon Krug
+Colour 255 255 255
+Type Body
+Defence 0.4
+KnockbackModifier 0.5
+MoveSpeedModifier 0.97
+hunger true
+ArmourTexture SkinIndiaPants
+Model monolith.IndiaPants
+Description Tier -2.5_Turkish Mirror Armor_Ottoman Empire
+bodyArmor 40
+armArmor 35
+Durability 275

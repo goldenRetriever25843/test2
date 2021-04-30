@@ -1,0 +1,18 @@
+Name Maximilian Plate Armor
+ShortName maximilian
+ItemID 31257
+Icon Maximilian
+Colour 255 255 255
+Type Body
+Defence 0.4
+KnockbackModifier 0.1
+MoveSpeedModifier 0.88
+hunger true
+ArmourTexture SkinMaximilian
+Model monolith.Maximilian
+Description Tier -2_German Tailor-made Suit of Plates_16th Century
+bodyArmor 116
+armArmor 88
+legArmor 69
+backArmor 112
+Durability 350

@@ -1,0 +1,12 @@
+Name Montefortino Helmet
+ShortName Montefortino
+ItemID 31257
+Icon Coolus
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+ArmourTexture SkinMontefortino
+Model monolith.Montefortino
+Description Tier -4_Roman Bronze Helmet_Early Republican Period
+headArmor 21
+Durability 35

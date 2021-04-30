@@ -1,0 +1,11 @@
+Name Rocket Flight Model
+ShortName FlightModelRocket
+Icon GodEngine
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 7078
+//Categories are Cockpit, Wing, Engine, Propeller, Bay, Tail, Wheel, Chassis, Turret, Misc
+Category Engine
+EngineSpeed 0.2
+FuelConsumption 25
+StackSize 4

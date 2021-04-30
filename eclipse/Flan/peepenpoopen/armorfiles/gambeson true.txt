@@ -1,0 +1,14 @@
+Name Lorica Segmentata Armor
+ShortName trueGambeson
+ItemID 31257
+Icon RomeBody
+Colour 255 255 255
+Type Body
+Defence 0.3
+KnockbackModifier 0.5
+MoveSpeedModifier 0.9
+ArmourTexture SkinGambesonTrue
+Model monolith.GambesonTrue
+Description Tier -3.5_Roman Plate Armor_Imperial Period
+bodyArmor 25
+Durability 250

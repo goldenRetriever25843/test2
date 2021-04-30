@@ -1,0 +1,10 @@
+Name MAghreb Tunic
+ShortName maghrebTunic
+ItemID 31257
+Icon GermanFeldgrauCoat
+Colour 255 255 255
+Type Body
+Defence 0.0
+ArmourTexture SkinMaghrebTunic
+Model NewAge.WW1MaghrebTunic
+ModelScale 1.1

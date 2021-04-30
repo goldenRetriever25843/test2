@@ -1,0 +1,12 @@
+Name Hunnic Robe
+ShortName hunRobe
+ItemID 31257
+Icon GambesonRed
+Colour 255 255 255
+Type Body
+Defence 0.15
+ArmourTexture SkinHunRobe
+Model monolith.HunRobe
+Description Reserve_Basic Padded Armor_Linen Silk or Wool Light Armor
+bodyArmor 5
+Durability 150

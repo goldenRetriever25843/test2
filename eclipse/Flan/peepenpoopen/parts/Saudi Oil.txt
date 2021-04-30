@@ -1,0 +1,10 @@
+Name Saudi Oil Contract
+ShortName SaudiOil
+Icon SaudiOilDeal
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 7407
+//Categories are Cockpit, Wing, Engine, Propeller, Bay, Tail, Wheel, Chassis, Turret, Fuel, Misc
+Category Misc
+StackSize 64
+Description Worth 100,000 Illuminati coins!

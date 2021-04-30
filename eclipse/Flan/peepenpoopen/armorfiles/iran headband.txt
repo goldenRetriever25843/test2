@@ -1,0 +1,12 @@
+Name Veiled Turban Helmet
+ShortName iranheadband
+ItemID 31257
+Icon turbanHelmet
+Colour 255 255 255
+Type Helmet
+Defence 0.25
+ArmourTexture skinIranHeadband
+Model monolith.iranHeadband
+Description martyr headband
+headArmor 30
+Durability 90

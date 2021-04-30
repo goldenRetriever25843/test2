@@ -1,0 +1,10 @@
+Name Pictish Warrior
+ShortName pict
+Icon Philip2icon
+Colour 255 255 255
+Type Body
+Defence 4
+Model monolith.Pict
+ArmourTexture SkinPict
+Description Caledonia Forever
+playermodel true

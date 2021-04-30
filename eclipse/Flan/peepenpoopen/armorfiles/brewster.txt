@@ -1,0 +1,10 @@
+Name Texan Armor
+ShortName brwester
+ItemID 31257
+Icon GermanFeldgrauCoat
+Colour 255 255 255
+Type Body
+Defence 0.0
+ArmourTexture Skin_Armor_brewster
+Model monolith.brewster
+ModelScale 1.05

@@ -1,0 +1,15 @@
+Name Arabe Armor
+ShortName Arabe
+ItemID 31257
+Icon Arabe
+Colour 255 255 255
+Type Body
+Defence 0.0
+KnockbackModifier 0.5
+MoveSpeedModifier 0.95
+ArmourTexture SkinArabeArmor
+Model monolith.ArabeArmor
+Description Tier -3.5_Arab Steel Mail_Early Medieval Period
+bodyArmor 21
+armArmor 20
+Durability 200

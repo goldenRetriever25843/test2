@@ -1,0 +1,69 @@
+//Naming
+Name Iowa Fleet Girl
+ShortName IowaMech
+ItemID 7462
+//Visuals
+Icon IowaCG
+Model monolith.IowaMech
+Texture SkinIowaBeach
+//Third Person Camera Distance
+CameraDistance 13.0
+//Driver and passenger positions
+Driver 0 127 0
+Passengers 0
+//Offset of driver from the point of rotation
+RotatedDriverOffset 0 0 0
+//Speed Modifier, 1 is player speed
+MoveSpeed 0.6
+//YOffset
+YOffset 0
+//Fuel Tank Size
+FuelTankSize 10000
+//Inventory Slots
+CargoSlots 56
+//How quickly the legs react to a change in direction
+RotateSpeed 10
+//Will it squash puny mobs?
+SquashMobs true
+//Step Height (Integer) and Jump Height (Float)
+StepHeight 2
+JumpHeight 7
+//Arm origins used to rotate arm models and calculate position of held item / tool (positions in model co-ordinates)
+LeftArmOrigin 42 77 -54
+RightArmOrigin 42 77 54
+//Arm lengths used to determine where the held items appear (Again in model co-ords)
+ArmLength 13
+LegLength 17
+//The scale multiplier for rendering the items and tools being held (1 will automatically scale with model)
+HeldItemScale 0.0001
+//Recipe
+//Each section of the mecha may have many parts
+//The sections are core, leftArm, rightArm, hips, head
+AddRecipeParts core 50 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+SetupPart core 12000 -80 24 -80 164 350 160
+BulletDetection 25
+//Height and Width for world collision
+Height 150
+Width 50
+//Height of chassis above the ground
+ChassisHeight 140
+//The amount of damage the mecha should take from falling
+FallDamageMultiplier 1.0
+//Whether to actually take fall damage. Can be overriden by upgrades
+TakeFallDamage false
+//The size of explosion to create per distance fallen upon hitting the ground
+BlockDamageFromFalling 11.0
+//Whether to actually damage the ground. Can be overridden by upgrades
+DamageBlocksFromFalling true
+ModelScale 3.85
+LegSwingLimit 3
+UpperArmLimit 45
+LowerArmLimit 15
+LimitHeadTurn True 50
+
+Description Tier 5_American Battleship Fleet Girl
+IsExplosionWhenDestroyed False
+
+PlaceSoundPrimary Admonished

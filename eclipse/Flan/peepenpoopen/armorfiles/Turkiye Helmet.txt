@@ -1,0 +1,12 @@
+Name Turkish Infantry Helmet
+ShortName turkiyearmymanhelm
+ItemID 31257
+Icon HussarHelm
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+ArmourTexture SkinOttomanInfantryHelm
+Model monolith.OttomanHeavyInfantry
+Description Tier -2.5_Turkish Infantry Helmet_Ottoman Empire
+headArmor 29
+Durability 100

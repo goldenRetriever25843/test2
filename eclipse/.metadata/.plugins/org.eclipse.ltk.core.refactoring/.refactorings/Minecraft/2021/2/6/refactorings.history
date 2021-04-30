@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ak ammo 40 dmg all pen.txt&apos; to &apos;ak ammo 40 dmg all pen.txt&apos;&#x0A;- Original project: &apos;Minecraft&apos;&#x0A;- Destination element: &apos;ak ammo 40 dmg all pen.txt&apos;&#x0A;- Original element: &apos;ak ammo 40 dmg all pen.txt&apos;" description="Copy file" element1="eclipse/Flan/peepenpoopen/bullets/ak ammo 40 dmg all pen.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1612361960577" target="/Minecraft/eclipse/Flan/peepenpoopen/bullets/ak ammo 40 dmg all pen.txt" units="0" version="1.0"/>
+</session>

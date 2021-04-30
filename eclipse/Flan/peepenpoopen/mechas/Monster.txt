@@ -1,0 +1,70 @@
+//Naming
+Name HWR-00 MKII Monster
+ShortName Monster
+ItemID 12501
+//Visuals
+Icon monsterIcon
+Model psf.Monster
+Texture Monster
+//Third Person Camera Distance
+CameraDistance 50.0
+//Driver and passenger positions
+Driver 0 357 0 -20 20 -15 45 hips
+//345
+Passengers 0
+//Offset of driver from the point of rotation
+RotatedDriverOffset 142 0 0
+//Speed Modifier, 1 is player speed
+MoveSpeed 0.5
+//YOffset
+YOffset 0
+//Fuel Tank Size
+FuelTankSize 10000
+//Inventory Slots
+CargoSlots 24
+//How quickly the legs react to a change in direction
+RotateSpeed 7
+//Will it squash puny mobs?
+SquashMobs true
+//Step Height (Integer) and Jump Height (Float)
+StepHeight 3
+JumpHeight 6
+//Arm origins used to rotate arm models and calculate position of held item / tool (positions in model co-ordinates)
+LeftArmOrigin 43 271 -202
+RightArmOrigin 43 271 202
+//-50.5 364 126
+//Arm lengths used to determine where the held items appear (Again in model co-ords)
+ArmLength 5
+LegLength 224
+//The scale multiplier for rendering the items and tools being held (1 will automatically scale with model)
+HeldItemScale 0.5
+//Recipe
+//Each section of the mecha may have many parts
+//The sections are core, leftArm, rightArm, hips, head
+AddRecipeParts core 60 Repair
+AddRecipeParts hips 40 Repair
+//Dye colours are "black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+//Health and collision
+SetupPart core 25000 -150 151 -285 352 330 555 
+SetupPart hips 15000 -86 45 -75 144 120 150 
+BulletDetection 50
+//Height and Width for world collision
+Height 320
+Width 70
+//Height of chassis above the ground
+ChassisHeight 245
+//The amount of damage the mecha should take from falling
+FallDamageMultiplier 1.0
+//Whether to actually take fall damage. Can be overriden by upgrades
+TakeFallDamage false
+//The size of explosion to create per distance fallen upon hitting the ground
+BlockDamageFromFalling 35.0
+//Whether to actually damage the ground. Can be overridden by upgrades
+DamageBlocksFromFalling true
+ModelScale 1
+LegSwingLimit 5
+LimitHeadTurn True 50
+Description Tier 6_Illuminati God Mech
+IsExplosionWhenDestroyed true
+
+PlaceSoundPrimary IlluminatiIgnition

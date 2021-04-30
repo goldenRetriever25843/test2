@@ -1,0 +1,176 @@
+showCrosshair true
+Name Arab Sword
+ShortName standard
+//The ammo this gun uses (shortName)
+Ammo test
+Ammo test2
+Ammo test3
+Ammo test4
+Ammo shell
+Icon Gladius
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 23821
+//Reload time in ticks, 1/20ths of a second
+ReloadTime 120
+//The amount of gun recoil, all relative : Sten = 1, Mp40 = 3, Kar98kSniper = 20
+Recoil 1
+Recoil 0.50
+RandomRecoilRange 1.00
+RandomRecoilYawRange 0.75
+DecreaseRecoil 0.50
+DecreaseRecoilYaw 1.25
+//Damage in half hearts
+Damage 1
+//The higher this value, the more the bullets spread
+Accuracy 5
+//Time in ticks between rounds
+ShootDelay 10
+Mode FullAuto
+//Bullet speed, default 3.0
+BulletSpeed 6.0
+//Default scope settings. Usually for aiming down sights. In which case, use FOVZoomLevel, not ZoomLevel
+Scope None
+ZoomLevel 1.0
+FOVZoomLevel 1.25
+//Deployable Settings
+Deployable False
+DeployedModel None
+//Model settings
+Model monolith.Standard
+ModelScale 0.9
+Texture SkinRoyalStandard
+//Attachment Settings
+AllowAllAttachments false
+//List here all the attachments allowed on this gun by shortName and separated by spaces
+AllowAttachments flanMWSilencer flanMWRedDot flanMWACOG flanMW4xScope flanMWSingleFire flanMWBurstFire flanMWAutoFire
+AllowBarrelAttachments true
+AllowScopeAttachments true
+AllowStockAttachments false
+AllowGripAttachments false
+NumGenericAttachmentSlots 1
+MoveSpeedModifier 0.99
+
+Description Tier 3_German Sub Machine Gun
+
+ShowRecoil true
+ShowAccuracy true
+ShowReloadTime true
+
+ReloadSoundRange 5
+GunSoundRange 300
+OneHanded True
+UseCustomMelee True
+MeleeDamage 3
+UseCustomMelee True
+//The time it takes to perform a melee attack in ticks
+MeleeTime 20
+//The point on the gun that does the damage
+MeleeDamagePoint 0 16 0
+MeleeDamagePoint 0 10 0
+MeleeDamagePoint 0 5 0
+MeleeDamagePoint 0 3 0
+MeleeDamagePoint 0 -9000 0
+//Define the path along which the weapon point moves in model co-ordinates from the gun's origin
+AddNode -2 1 0 0 0 2
+AddNode -5 2 0 0 0 5
+AddNode -12 8 0 0 0 50
+AddNode -15 15 0 0 0 62
+AddNode -12 9 0 0 0 62
+AddNode -10 8 0 0 0 20
+AddNode 5 0 0 0 0 -5
+AddNode 15 -8 0 0 0 -40
+AddNode 20 -15 0 0 0 -95
+AddNode 19 -15 0 0 0 -90
+AddNode 18 -12 0 0 0 -85
+AddNode 12 -3 0 0 0 -20
+AddNode 3 0 0 0 0 -3
+AddNode 1 0 0 0 0 0
+AddNode 0 0 0 0 0 0
+
+MeleeLeftDamagePoint 0 18 0
+MeleeLeftDamagePoint 0 12 0
+MeleeLeftDamagePoint 0 6 0
+MeleeLeftDamagePoint 0 3 0
+MeleeLeftDamagePoint 0 -9000 0
+meleeLeft true
+MeleeLeftTime 20
+AddLeftNode 0 1 0 3 0 0
+AddLeftNode -1 2 -1 -7 0 -2
+AddLeftNode -3 3 -1 -10 0 -5
+AddLeftNode -5 5 0 -20 0 -7
+AddLeftNode -6 7 0 -30 0 -10
+AddLeftNode -8 8 1 -40 0 -12
+AddLeftNode -4 3 1 -55 0 -10
+AddLeftNode -2 -2 -8 -70 0 -8
+AddLeftNode 2 -8 -16 -100 0 -1
+AddLeftNode 2 -8 -17 -100 0 -1
+AddLeftNode 5 -21 -18 -115 0 0
+AddLeftNode 6 -8 -17 -100 0 -1
+AddLeftNode 7 -19 -14 -95 0 1
+AddLeftNode 8 -10 -5 -30 0 2
+AddLeftNode 2 -7 -1 0 0 1
+
+MeleeRightDamagePoint 0 18 0
+MeleeRightDamagePoint 0 12 0
+MeleeRightDamagePoint 0 6 0
+MeleeRightDamagePoint 0 3 0
+MeleeRightDamagePoint 0 -9000 0
+meleeRight true
+MeleeRightTime 20
+AddRightNode 0 1 0 3 0 0
+AddRightNode -1 2 1 7 0 -2
+AddRightNode -3 3 1 10 0 -5
+AddRightNode -5 5 0 20 0 -7
+AddRightNode -6 7 0 30 0 -10
+AddRightNode -8 8 -1 40 0 -12
+AddRightNode -4 3 -1 55 0 -10
+AddRightNode -2 -2 8 70 0 -8
+AddRightNode 2 -8 16 100 0 -1
+AddRightNode 2 -8 17 100 0 -1
+AddRightNode 5 -21 18 115 0 0
+AddRightNode 6 -8 17 100 0 -1
+AddRightNode 7 -19 14 95 0 1
+AddRightNode 8 -10 5 30 0 2
+AddRightNode 2 -7 1 0 0 1
+
+MeleeUpDamagePoint 0 -9000 0
+MeleeUpDamagePoint 0 -9000 0
+MeleeUpDamagePoint 0 -9000 0
+MeleeUpDamagePoint 0 -9000 0
+MeleeUpDamagePoint 0 -9000 0
+MeleeUpTime 20
+
+MoveSpeedModifier 0.95
+
+
+MeleeHitSound sword_hit_deadly
+ShieldHitSound shield_metal
+
+Description Tier -3_Japanese Cavalry Sword_Base Damage 12_Armor Piercing 22_Reach 2.2_Two-Handed_A and D for Cavalry Slashes_Heian Period
+Ammo tachiEnergy
+ReloadTime 1
+//The amount of gun recoil, all relative : Sten = 1, Mp40 = 3, Kar98kSniper = 20
+Recoil 1.5
+RandomRecoilRange 2.00
+RandomRecoilYawRange 0.75
+DecreaseRecoil 1.50
+DecreaseRecoilYaw 1.25
+//Accuracy 8
+Accuracy 8
+ShootDelay 20
+BulletSpeed 0.55
+//speed was 2.2
+shootMelee true
+Mode SemiAuto
+MeleeDamage 0.1
+//NumBullets 4
+NumBullets 4
+Damage 1
+ShowRecoil false
+ShowAccuracy false
+ShowReloadTime false
+ShootSound NataSwing
+// true if you still want the bow holding animation
+spear true
+UseCustomMelee False

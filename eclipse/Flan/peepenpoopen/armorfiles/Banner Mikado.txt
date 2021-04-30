@@ -1,0 +1,8 @@
+Name Eastern Kingdom Banner
+ShortName Mikado
+Icon MikadoIcon
+Colour 255 255 255
+Type Boots
+Defence 0
+Model NewAge.MikadoBanner
+ArmourTexture Mikado

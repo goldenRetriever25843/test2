@@ -1,0 +1,15 @@
+Name Proto Samurai
+ShortName ironTanko
+ItemID 31257
+Icon OYoroi
+Colour 255 255 255
+Type Body
+Defence 0.3
+KnockbackModifier 0.5
+MoveSpeedModifier 0.9
+ArmourTexture SkinKofunTanko
+Model monolith.KofunTanko
+Description Tier -3_Japanese Lamellar Armor_Kofun Period
+bodyArmor 30
+armArmor 22
+Durability 150

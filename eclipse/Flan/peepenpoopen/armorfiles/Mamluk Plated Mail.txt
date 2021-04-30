@@ -1,0 +1,16 @@
+Name Mamluk Cataphract Armor
+ShortName malukMail
+ItemID 31257
+Icon Mamluk
+Colour 255 255 255
+Type Body
+Defence 0.4
+KnockbackModifier 0.5
+MoveSpeedModifier 0.95
+hunger true
+ArmourTexture SkinMamlukMail
+Model monolith.MamlukMail
+Description Tier -3_Egyptian Plated-Mail Armor_Mamluk Sultanate
+bodyArmor 35
+armArmor 30
+Durability 250

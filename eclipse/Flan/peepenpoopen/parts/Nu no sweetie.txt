@@ -1,0 +1,10 @@
+Name Lost Turret
+ShortName lostTurret
+Icon lostTurret
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 7407
+//Categories are Cockpit, Wing, Engine, Propeller, Bay, Tail, Wheel, Chassis, Turret, Fuel, Misc
+Category Misc
+StackSize 64
+Description Sorry sweetie, if a tank's turret is obliterated, the entire crew would have died and the tank would be lost.

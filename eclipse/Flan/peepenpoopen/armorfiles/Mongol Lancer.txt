@@ -1,0 +1,16 @@
+Name Mongol Heavy Lancer Armor
+ShortName mongolLancer
+ItemID 31257
+Icon MongolLancer
+Colour 255 255 255
+Type Body
+Defence 0.4
+KnockbackModifier 0.2
+MoveSpeedModifier 0.95
+hunger true
+ArmourTexture SkinMongolLancerFix
+Model monolith.MongolLancerRee
+Description Tier -3_Mongol Heavy Lamellar Armor
+bodyArmor 40
+armArmor 30
+Durability 125

@@ -1,0 +1,13 @@
+Name Veiled Turban Helmet
+ShortName ihpslight
+ItemID 31257
+Icon turbanHelmet
+Colour 255 255 255
+Type Helmet
+Defence 0.25
+ArmourTexture SkinIHPSlight
+Model monolith.IHPSlight
+Description next gen helmet
+headArmor 250
+faceArmor 120
+Durability 90

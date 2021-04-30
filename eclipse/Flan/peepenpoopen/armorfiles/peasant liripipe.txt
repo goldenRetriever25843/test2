@@ -1,0 +1,11 @@
+Name Liripipe Hood
+ShortName liripipe
+ItemID 31257
+Icon SteppeHat
+Colour 255 255 255
+Type Helmet
+Defence 0.0
+MoveSpeedModifier 1.02
+ArmourTexture SkinLiripipe
+Model monolith.Liripipe
+Description Reserve_Nomad Steppe Hat

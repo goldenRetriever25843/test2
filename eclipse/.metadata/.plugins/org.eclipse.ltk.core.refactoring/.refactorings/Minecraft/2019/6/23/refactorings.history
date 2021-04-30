@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;T-5S Bireme.txt&apos; to &apos;T-5S Bireme.txt&apos;&#x0A;- Original project: &apos;Minecraft&apos;&#x0A;- Destination element: &apos;T-5S Bireme.txt&apos;&#x0A;- Original element: &apos;T-5S Bireme.txt&apos;" description="Copy file" element1="eclipse/Flan/Pre Industrial Pack/vehicles/T-5S Bireme.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1559880111429" target="/Minecraft/eclipse/Flan/Pre Industrial Pack/vehicles/T-5S Bireme.txt" units="0" version="1.0"/>
+</session>

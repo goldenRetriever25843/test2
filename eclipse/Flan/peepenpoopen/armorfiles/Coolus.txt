@@ -1,0 +1,13 @@
+Name Coolus Helmet
+ShortName Coolus
+ItemID 31257
+Icon Coolus
+Colour 255 255 255
+Type Helmet
+Defence 0.15
+ArmourTexture SkinCoolus
+Model monolith.Coolus
+Description Tier -4_Roman Bronze Helmet_Republican Period
+headArmor 21
+faceArmor 5
+Durability 35

@@ -1,0 +1,17 @@
+Name Italian Plate Armor
+ShortName milanese
+ItemID 31257
+Icon Gothic
+Colour 255 255 255
+Type Body
+Defence 0.4
+KnockbackModifier 0.5
+MoveSpeedModifier 0.9
+hunger true
+ArmourTexture SkinMilan
+Model monolith.milanPlate
+Description Tier -2.5_Italian Tailor-made Suit of Plates_Early Renaissance / Late Medieval Period
+
+bodyArmor 55
+armArmor 45
+Durability 300

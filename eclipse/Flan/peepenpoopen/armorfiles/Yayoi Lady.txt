@@ -1,0 +1,10 @@
+Name Ancient Thot
+ShortName yayoiLady
+Icon Philip2icon
+Colour 255 255 255
+Type Body
+Defence 4
+Model monolith.YayoiLady
+ArmourTexture SkinYayoiLady
+Description OwW
+playermodel true

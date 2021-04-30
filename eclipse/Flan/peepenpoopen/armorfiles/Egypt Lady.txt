@@ -1,0 +1,10 @@
+Name Ancient Thot
+ShortName egyptoanLady
+Icon Philip2icon
+Colour 255 255 255
+Type Body
+Defence 4
+Model monolith.EgyptLady
+ArmourTexture SkinEgyptLady
+Description OwW
+playermodel true

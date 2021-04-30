@@ -1,0 +1,12 @@
+Name Gallic Helmet
+ShortName gallicHelm
+ItemID 31257
+Icon RomeHelmet
+Colour 255 255 255
+Type Helmet
+Defence 0.2
+ArmourTexture SkinGallicHelm
+Model monolith.GallicHelm
+Description Tier -3.5_Roman Iron Helmet_Imperial Period
+headArmor 25
+Durability 50
